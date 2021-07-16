@@ -1,0 +1,62 @@
+html,body {
+    min-height: 100vh;
+}
+
+/* --- Tour Header ---*/
+.intro {
+    height: 40vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*--- SongKick ---*/
+section {
+    min-height: 100vh;
+}
+
+.songkick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    max-width: 50vw;
+    min-height: 50vh;
+}
+
+.songkick a {
+    max-width: 50vw;
+}
+
+/*--- Title text ---*/
+/*.left-text {
+    position: relative;
+}
+
+.left-text p {
+    position: absolute;
+}
+
+.left-text p::before {
+    content: "";
+    border-bottom: 500px solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}*/
+
+@media all and (max-width: 800px) {
+    .songkick div {
+        width: 92vw;
+        max-width: 92vw;
+    }
+}

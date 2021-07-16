@@ -1,0 +1,71 @@
+html,body {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.new-releases {
+    height: 30vh;
+    background-color: var(--dark);
+}
+
+/*--- Realeases Header ---*/
+.r-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--dark);
+    max-width: 80%;
+    padding: 20px;
+}
+
+.r-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.r-header li {
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+/*--- Card container ---*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*--- Card Design ---*/
+.card {
+    display: flex;
+    background-color: var(--dark);
+    max-width: 500px;
+}
+
+.card h3,a {
+    color: var(--light)
+}
+
+.card h3 {
+    font-size: 30px;
+}
+
+.card p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+
+.card a {
+    visibility: hidden;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.cover-img {
+    min-width: 200px;
+    min-height: 200px;
+    background-size: cover;
+}

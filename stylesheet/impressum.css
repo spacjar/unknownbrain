@@ -1,0 +1,69 @@
+html,body {
+    min-height: 100vh;
+}
+
+/* --- Tour Header ---*/
+
+
+/*--- SongKick ---*/
+.impressum {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.impressum .text {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.impressum .text h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.impressum .text h2 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.impressum .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.impressum .container li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+
+
+/*--- Title text ---*/
+/*.left-text {
+    position: relative;
+}
+
+.left-text p {
+    position: absolute;
+}
+
+.left-text p::before {
+    content: "";
+    border-bottom: 500px solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}*/
+
+@media all and (max-width: 800px) {
+
+}
