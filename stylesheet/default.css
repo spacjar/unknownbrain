@@ -2,6 +2,7 @@
 @import url('https://use.typekit.net/xtv0hhc.css');
 
 :root {
+    /*-- Colors --*/
     --dark: #0F1116;
     --lighter-dark: rgba(15, 17, 22, 0.96);
     --light-dark: rgba(15, 17, 22, 0.8);
@@ -16,6 +17,13 @@
     --faceless-yellow: #FED700;
     --faceless-green: #00F081;
     --faceless-blue: #0700FE;
+
+    /*-- Font sizes --*/
+    --fsj-small:;
+    /*-- Font wieght --*/
+    --fw-slim: ;
+    --fw-medium: ;
+    --fw-bold: ;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -76,8 +84,6 @@ input[type="submit"] {
     font-weight: 700;
 }
 
-
-
 /* --- Nav Menu Style --- */
 .menu {
     display: flex;
@@ -86,15 +92,14 @@ input[type="submit"] {
     justify-content: space-between;
     z-index: 20;
     position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
 }
 
 .menu > * {
     margin: 40px 30px;
     cursor: pointer;
-}
-
-.menu svg path {
-    mix-blend-mode: difference;
+    pointer-events: auto;
 }
 
 .hidden-header {
@@ -164,8 +169,6 @@ input[type="submit"] {
     opacity: 0;
     margin: 0 0; 
 }
-
-
 
 .sidenav li:hover {
     cursor: pointer;

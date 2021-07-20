@@ -20,7 +20,7 @@ html,body {
 }
 
 /*--- SongKick ---*/
-section {
+.tour-info {
     min-height: 100vh;
 }
 
@@ -31,10 +31,7 @@ section {
     padding-top: 120px;
     max-width: 50vw;
     min-height: 50vh;
-}
-
-.songkick a {
-    max-width: 50vw;
+    color: var(--dark);
 }
 
 /*--- Title text ---*/
