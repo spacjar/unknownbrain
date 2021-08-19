@@ -17,13 +17,14 @@
     --faceless-yellow: #FED700;
     --faceless-green: #00F081;
     --faceless-blue: #0700FE;
-
-    /*-- Font sizes --*/
-    --fsj-small:;
-    /*-- Font wieght --*/
+/*
+    -- Font sizes --
+    --fs-small: ;
+    -- Font wieght --
     --fw-slim: ;
     --fw-medium: ;
     --fw-bold: ;
+*/
 }
 
 html, body, div, span, applet, object, iframe,
@@ -47,6 +48,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
     font-family: p22-underground, sans-serif;
     font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
 }
 
 h1,h2 {
@@ -283,8 +290,7 @@ footer {
 }
 
 .lower-footer > * {
-    width: 90%;
-    max-width: 1500px;
+    width: 100%;
 }
 
 .footer-links-layout {
@@ -352,8 +358,8 @@ footer {
     color: var(--light);
 }
 
-.copy span {
-    color: var(--darker-light);
+.copy p {
+    color: var(--light);
 }
 
 .copy p:nth-child(2) {
@@ -364,6 +370,32 @@ footer {
     color: var(--light);
 }
 
+.copy span {
+    color: var(--darker-light);
+}
+
+.link-underline {
+    width: 90px;
+    position: relative;
+}
+
+.link-underline:hover,.link-underline:focus {
+    border-bottom: 2px solid black;
+}
+
+.link-underline::after {
+    content: "";
+    position: absolute;
+    top: 19%;
+    right: 0;
+    border: 1px solid #000;
+    border-width: 0 4px 4px 0;
+    border-radius: 0px 2px;
+    width: 4px;
+    height: 4px;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+}
 
 
 /*--- Media Queries ---*/
