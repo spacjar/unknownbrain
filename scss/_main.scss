@@ -1,0 +1,23 @@
+/*text-rendering: optimizeLegibility;*/
+
+.promotion {
+    height: 100vh;
+    background-image: url(../img/background/chapter-II.png);
+    background-size: cover;
+    .container {
+        .text-center {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            mix-blend-mode: difference;
+        }
+    }    
+}
+
+.song-promotion {
+    background-color: #0F1116;
+    overflow: hidden;
+}
+
+.community {
+    background-color: #FFFFFF;
+}

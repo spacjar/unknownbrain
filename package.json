@@ -4,7 +4,7 @@
   "description": "Website for Unknown Brain.",
   "main": "package.json",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass scss/app.scss css/app.css -w"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,205 @@
+.new-releases {
+    height: 60vh;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-releases .card-text-top > * {
+    color: #fff;
+}
+
+/*--- Realeases Header ---*/
+.releases-header {
+    padding: 40px 0 20px;
+    background-color: $light;
+}
+
+.releases-header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $dark;
+}
+
+.releases-header h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.releases-header ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.releases-header li {
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #353535;
+}
+
+.releases-header li:hover {
+    font-weight: 500;
+    color: $dark;
+}
+
+.releases-header li:first-child {
+    font-weight: 900;
+    color: $dark;
+}
+
+/*--- Card container ---*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container .year {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+}
+
+.card-container .year:nth-child(2n) {
+    background-color: #F4F4F4;
+}
+
+.card-container .year .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-container .year {
+    background-color: $light;
+}
+
+.card-container .year:nth-child(2) {
+    background-color: #F4F4F4;
+}
+
+/*--- Card Design ---*/
+.card {
+    display: flex;
+    width: 50%;
+    margin: 20px 0;
+}
+
+.card h3,a,p {
+    color: #000000;
+}
+
+.cover-img {
+    min-width: 200px;
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-size: 200px 200px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.card-text-top {
+    padding-left: 5px;
+    border-left: 3px solid #000000;
+}
+
+.card-text-top .label {
+    font-size: 13px;
+    font-weight: 900;
+    max-width: 70%;
+}
+
+.card-text-top .song {
+    max-width: 100%;
+    margin: 8px 0 3px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.card-text-top .musicians{
+    font-size: 13px;
+    max-width: 80%;
+}
+
+.card-text a {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    flex: 2;
+}
+
+@media all and (max-width: 1000px) {
+    .container {
+        padding: 0 40px;
+        max-width: 100%;
+    }
+    .card {
+        width: 100%
+    }
+    .card-container .year .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-text {
+        padding: 30px 10px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        padding: 0 10px;
+    }
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cover-img {
+        width: 250px;
+        height: 250px;
+        background-size: 100% 100%;
+    }
+    .card-text-top {
+        padding-left: 0;
+        border-left: none;
+    }
+    .card-text {
+        padding: 10px 10px 0;
+        align-items: center;
+    }
+    .card-text-top .label {
+        max-width: 100%;
+    }
+    
+    .card-text-top .song {
+        max-width: 100%;
+    }
+    
+    .card-text-top .musicians{
+        font-size: 13px;
+        max-width: 100%;
+    }
+    
+    .card-text .link-underline {
+        margin-top: 10px;
+        text-align: center;
+    }
+}

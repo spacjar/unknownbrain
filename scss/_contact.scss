@@ -1,0 +1,38 @@
+/*--- Left inner container ---*/
+.contact-left {
+    flex: 0.35;
+    color: $light;
+    /*background-image: url("../img/UB-contact-bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    background-color: $lighter-dark;
+}
+
+/*--- Right inner container ---*/
+.contact-right {
+    display: grid;
+    flex: 0.65;
+    background-color: $dark;
+    color: $light;
+}
+
+/*--- Contact form ---*/
+.contact-right form {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+    gap: 10px;
+    label {
+        grid-column: 1 / 2;
+    }
+    input[type=submit] {
+        width: inherit;
+    }
+    label {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* --- Footer Mailing Color Design ---*/
