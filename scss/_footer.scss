@@ -24,46 +24,40 @@ footer {
     align-items: center;
     padding: 60px 0;
     font-size: 30px;
-}
-
-.newsletter h2 {
-    color: #959595;
-    mix-blend-mode: difference;
-    font-size: 30px;
-}
-
-.newsletter p {
-    color: #959595;
-    mix-blend-mode: difference;
-    font-weight: 400;
-    margin-top: 5px;
-}
-
-.newsletter form {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.newsletter form input {
-    border: 1px solid $light;
-    background-color: rgba(254, 254, 254, 0.33);
-    color: $dark;
-    padding: 12px;
-    margin-top: 20px;
-    width: 500px;
-}
-
-.newsletter form input[type="submit"] {
-    background-color: $light;
-    color: $dark;
-    font-weight: 700;
-    padding: 10px 25px;
-    width: 120px;
-}
-
-.newsletter form input[type="submit"]:hover {
-    cursor: pointer;
+    h2 {
+        color: #959595;
+        mix-blend-mode: difference;
+        font-size: 30px;
+    }
+    p {
+        color: #959595;
+        mix-blend-mode: difference;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    form {
+        display: flex;
+        flex-direction: row;
+        input {
+            border: 1px solid $light;
+            background-color: rgba(254, 254, 254, 0.33);
+            color: $dark;
+            padding: 12px;
+            margin-top: 20px;
+            width: 500px;
+        }
+        input[type="submit"] {
+            background-color: $light;
+            color: $dark;
+            font-weight: 700;
+            padding: 10px 25px;
+            width: 120px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #F4F4F4;
+        }
+    }
 }
 
 .lower-footer {
