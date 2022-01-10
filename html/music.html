@@ -7,7 +7,24 @@
     
     <title>Unknown Brain - Music library</title>
 
-    <meta name="description" content="The official Unknown Brain Website">
+    <meta name="theme-color" content="#0F1116">
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+    <meta name="description" content="The official Unknown Brain Website - Browse through our music library.">
+    <!--<meta name="twitter:card" content=""/>-->
+    <meta name="twitter:site" content="@UnknownBrain_"/>
+    <meta name="twitter:creator" content="@UnknownBrain_"/>
+    <meta property="og:url" content="https://unknownbrain.com/music"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Unknown Brain - Music library"/>
+    <meta property="og:description" content="Browse through our music library."/>
+    <!--<meta property="og:image" content=""/>-->
+    <meta property="og:image:alt" content="The official Unknown Brain Website - Music"/>
+    <meta property="og:site_name" content="The official Unknown Brain Website - Music"/>
+    <meta name="next-head-count" content="27"/>
+
+    <link rel="shortcut icon" href="../img/favicons/favicon-32.png">
+
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/xtv0hhc.css">
@@ -16,23 +33,28 @@
 <body>
     <header id="header">
         <div class="menu">
-            <svg class="icon-light" width="40" height="35" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <a href="#"></a>
-                <g clip-path="url(#clip0)">
-                    <path id="p1" d="M5.19468 13.9607L7.63494 12.5518V4.42181L5.69492 3.30181V11.4368L5.19885 11.7234L1.94003 9.84095V1.13378L0.00354628 0.0156555H0V10.9616L5.19468 13.9607Z" fill="#FFFFFF"/>
-                    <path d="M16 0L8.3442 4.42096V13.1246L6.03494 14.458L7.97497 15.578L8.3442 15.3648V19.7872L10.2842 18.6672V14.2448L16 10.9447V9.25893L13.716 7.94013L16 6.61883V0ZM10.2842 12.0046V8.19901L13.5802 10.1017L10.2842 12.0046ZM10.2842 7.68522V5.53992L14.06 3.35562V5.49987L10.2842 7.68522Z" fill="#FFFFFF"/>
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="16" height="19.7866" fill="#FFFFFF"/>
-                    </clipPath>
-                </defs>
-            </svg>
-            <svg class="icon-light" id="btn" width="36" height="30" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="30" height="5" fill="#FFFFFF"/>
-                <rect x="6" y="8" width="30" height="5" fill="#FFFFFF"/>
-                <rect x="6" y="16" width="20" height="5" fill="#FFFFFF"/>
-            </svg>
+            <a href="index.html">
+                <svg class="icon-light" width="40" height="35" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path id="p1" d="M5.19468 13.9607L7.63494 12.5518V4.42181L5.69492 3.30181V11.4368L5.19885 11.7234L1.94003 9.84095V1.13378L0.00354628 0.0156555H0V10.9616L5.19468 13.9607Z" fill="#FFFFFF"/>
+                        <path d="M16 0L8.3442 4.42096V13.1246L6.03494 14.458L7.97497 15.578L8.3442 15.3648V19.7872L10.2842 18.6672V14.2448L16 10.9447V9.25893L13.716 7.94013L16 6.61883V0ZM10.2842 12.0046V8.19901L13.5802 10.1017L10.2842 12.0046ZM10.2842 7.68522V5.53992L14.06 3.35562V5.49987L10.2842 7.68522Z" fill="#FFFFFF"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="16" height="19.7866" fill="#FFFFFF"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <div class="menu-btn" id="menu-btn">
+                <span id="menu-text" class="menu-text">MENU</span>
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            </div>
         </div>
         <div class="hidden-header" id="hidden-header">
             <nav class="sidenav" id="sidenav">
@@ -70,7 +92,25 @@
         </div>
     </header>
     <!--New Releases-->
-    <section class="music">
+    <section class="newest-release">
+        <span class="text-bg">ROOFTOP</span>
+        <div class="container">
+            <div class="release-left">
+                <div class="top">
+                    <p class="label">2021 / Warner Music Group</p>
+                    <h2 class="song">ROOFTOP</h2>
+                    <p class="arists">Unknown Brain feat. iyazlive & shiahsings</p>
+                </div>
+                <div class="bottom">
+                    <a href="https://lnk.to/UnknownBrain_RooftopAY" class="btn-dark">Listen Now</a>
+                </div>
+            </div>
+            <div class="release-right">
+                <img src="../img/cover/rooftop.jpg" alt="Rooftop">
+            </div>
+        </div>
+    </section>
+    <!--<section class="music">
         <div class="releases-header">
             <div class="container">
                 <h3>EXPLORE THE UNKNOWN</h3>
@@ -85,7 +125,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section>-->
         <div class="releases">
             <div class="card-container">
                 <div class="year">
@@ -98,7 +138,7 @@
                                     <h3 class="song">Faceless</h3>
                                     <p class="musicians">Unknown Brain feat. Marvin Divine & Bri Tolani</p>
                                 </div>
-                                <a href="https://youtu.be/WzkSlpgXGck?list=OLAK5uy_lo1Q5eXxmtBlRCCUKS2_J5Brx2OJdFH2g" target="_blank" class="link-underline">listen now</a>
+                                <a href="https://ncs.lnk.to/Faceless" target="_blank" class="link-underline">listen now</a>
                             </div>
                         </div>
                         <div class="card">
@@ -120,7 +160,7 @@
                                     <h3 class="song">Jungle of Love</h3>
                                     <p class="musicians">Unknown Brain feat. Glaceo</p>
                                 </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
+                                    <a href="" target="_blank" class="link-underline">listen now</a>
                             </div>
                         </div>
                         <div class="card">
@@ -488,7 +528,7 @@
                                     <h3 class="song">Superhero</h3>
                                     <p class="musicians">Unknown Brain feat. Chris Linton</p>
                                 </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
+                                <a href="http://ncs.io/superhero" class="link-underline">listen now</a>
                             </div>
                         </div>
                         <div class="card">
@@ -497,83 +537,83 @@
                                 <div class="card-text-top">
                                     <p class="label">2016 / Chill Planet</p>
                                     <h3 class="song">Separate Ways</h3>
-                                    <p class="musicians">Unknown Brain feat. Chris Linton</p>
+                                    <p class="musicians">Unknown Brain</p>
                                 </div>
-                                    <a href="" target="_blank" class="link-underline">listen now</a>
+                                <a href="#" class="link-underline">listen now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <footer>
-        <div class="footer-parts">
-            <div class="newsletter">
-                <h2>JOIN THE #UBSQUAD</h2>
-                <p>Subscribe to our newsletter and stay updated.</p>
-                <form action="">
-                    <input type="text" placeholder="Email address">
-                    <input type="submit" value="Subscribe">
-                </form>
-            </div>
-            <div class="lower-footer">
-                <div class="container">
-                    <div class="footer-links">
-                        <div class="footer-links-layout">
-                            <div class="footer-links-left">
-                                <div class="footer-item-left">
-                                    <h3>Explore</h3>
-                                    <ul>
-                                        <li><a href="">Home</a></li>
-                                        <li><a href="">About us</a></li>
-                                        <li><a href="">Music</a></li>
-                                    </ul>
+        <footer>
+            <div class="footer-parts">
+                <div class="newsletter">
+                    <h2>JOIN THE #UBSQUAD</h2>
+                    <p>Subscribe to our newsletter and stay updated.</p>
+                    <!--<form action="">
+                        <input type="text" placeholder="Email address">
+                        <input type="submit" value="Subscribe">
+                    </form>-->
+                </div>
+                <div class="lower-footer">
+                    <div class="container">
+                        <div class="footer-links">
+                            <div class="footer-links-layout">
+                                <div class="footer-links-left">
+                                    <div class="footer-item-left">
+                                        <h3>Explore</h3>
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About us</a></li>
+                                            <li><a href="music.html">Music</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-item-left">
+                                        <h3>Tours</h3>
+                                        <ul>
+                                            <li><a href="tour.html">Tours and concerts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-item-left">
+                                        <h3>Get in touch</h3>
+                                        <ul>
+                                            <li><a href="contact.html">Contact us</a></li>
+                                            <li><a href="mailto: contact@unknownbrain.com">Email</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-item-left">
+                                        <h3>Legal</h3>
+                                        <ul>
+                                            <!--<li><a href="">Privacy Policy</a></li>-->
+                                            <li><a href="impressum.html">Imprint</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="footer-item-left">
-                                    <h3>Tours</h3>
-                                    <ul>
-                                        <li><a href="">Tours and concerts</a></li>
-                                    </ul>
-                                </div>
-                                <div class="footer-item-left">
-                                    <h3>Get in touch</h3>
-                                    <ul>
-                                        <li><a href="">Contact us</a></li>
-                                        <li><a href="">Email</a></li>
-                                    </ul>
-                                </div>
-                                <div class="footer-item-left">
-                                    <h3>Legal</h3>
-                                    <ul>
-                                        <li><a href="">Privacy Policy</a></li>
-                                        <li><a href="">Imprint</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer-links-right">
-                                <div class="footer-item-right">
-                                    <h3>Follow us</h3>
-                                    <div class="footer-social-icons">
-                                        <a href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng" target="_blank"><i class="fab fa-youtube"></i></a>
-                                        <a href="https://www.instagram.com/unknown_brain/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                        <a href="https://discord.gg/GubW9Pdcd5" target="_blank"><i class="fab fa-discord"></i></a>
-                                        <a href="https://www.facebook.com/UnknownBrain" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="https://twitter.com/UnknownBrain_" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://music.apple.com/us/artist/unknown-brain/1177741866" target="_blank"><i class="fab fa-apple"></i></a>
-                                        <a href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I" target="_blank"><i class="fab fa-spotify"></i></a>
-                                        <a href="https://soundcloud.com/unknownbrain" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                                <div class="footer-links-right">
+                                    <div class="footer-item-right">
+                                        <h3>Follow us</h3>
+                                        <div class="footer-social-icons">
+                                            <a href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng" target="_blank"><i class="fab fa-youtube"></i></a>
+                                            <a href="https://www.instagram.com/unknown_brain/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://discord.gg/GubW9Pdcd5" target="_blank"><i class="fab fa-discord"></i></a>
+                                            <a href="https://www.facebook.com/UnknownBrain" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/UnknownBrain_" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://music.apple.com/us/artist/unknown-brain/1177741866" target="_blank"><i class="fab fa-apple"></i></a>
+                                            <a href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I" target="_blank"><i class="fab fa-spotify"></i></a>
+                                            <a href="https://soundcloud.com/unknownbrain" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="copy">
-                        <p>&copy; 2021 Unknown Brain, <span>All rights reserved.</span></p>
-                        <p>Created with &#10084; by <a>Silenthium</a>.</p>
+                        <div class="copy">
+                            <p>&copy; 2021 Unknown Brain, <span>All rights reserved.</span></p>
+                            <p>Created with &#10084; by <a>Silenthium</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>

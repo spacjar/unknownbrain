@@ -1,173 +1,174 @@
 /* --- CSS Default settings --- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 
-h1,h2 {
-    font-size: 30px;
-    font-weight: 900;
-}
-
-h3,h4 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-p {
-    font-size: 15px;
-    font-weight: 400;
-}
-
-a {
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    color: $darker-light;
-}
-
-input,textarea {
-    border: 1px solid $light;
-    background-color: transparent;
-    color: $light;
-    padding: 12px;
+input,
+textarea {
+  border: 1px solid $light;
+  background-color: transparent;
+  color: $light;
+  padding: 12px;
 }
 
 input[type="submit"] {
-    background-color: $light;
-    color: $dark;
-    font-weight: 700;
+  background-color: $light;
+  color: $dark;
+  font-weight: 700;
 }
 
 /* --- Text style --- */
 .footer-links h3 {
-    color: $light;
-    font-weight: 600;
+  color: $light;
+  font-weight: 200;
 }
 
 .footer-links li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: $darker-light;
-    font-weight: 400;
+  text-decoration: none;
+  color: $darker-light;
+  font-weight: 100;
 }
 
 .footer-links li {
-    color: $darker-light;
-    font-weight: 400;
+  color: $darker-light;
+  font-weight: 400;
 }
 
 .footer-links a:hover {
-    cursor: pointer;
-    color: $light;
+  cursor: pointer;
+  color: $light;
 }
 
 .copy p {
-    color: $light;
+  color: $light;
 }
 
 .copy p:nth-child(2) {
-    color: $darker-light;
+  color: $darker-light;
 }
 
 .copy a {
-    color: $light;
+  color: $light;
 }
 
 .copy span {
-    color: $darker-light;
+  color: $darker-light;
 }
 
 .link-underline {
-    width: 90px;
-    position: relative;
+  width: 90px;
+  position: relative;
 }
 
-.link-underline:hover,.link-underline:focus {
-    border-bottom: 2px solid black;
+.link-underline:hover,
+.link-underline:focus {
+  border-bottom: 2px solid $light;
 }
 
 .link-underline::after {
-    content: "";
-    position: absolute;
-    top: 19%;
-    right: 0;
-    border: 1px solid #000;
-    border-width: 0 4px 4px 0;
-    border-radius: 0px 2px;
-    width: 4px;
-    height: 4px;
-    transform: rotate(315deg);
-    -webkit-transform: rotate(315deg);
+  content: "";
+  position: absolute;
+  top: 33%;
+  right: 0;
+  border: 1px solid $light;
+  border-width: 0 4px 4px 0;
+  border-radius: 0px 2px;
+  width: 4px;
+  height: 4px;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
 }
-
-
-/*--- Media Queries ---*/
-@media all and (max-width: 1024px) {
-    header {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .hidden-header {
-        width: 100vw;
-        box-shadow: none;
-    }
-
-    .sidenav ul {
-        width: 80vw;
-    }
-
-    .menu {
-        justify-content: space-between;
-        width: 90vw;
-    }
-
-    .menu > * {
-        margin: 30px 0;
-        cursor: pointer;
-    }
-
-    .newsletter form input {
-        width: 40vw;
-    }
-    
-    .newsletter form input[type="submit"] {
-        width: 120px;
-    }
-}
-
-@media all and (max-width: 600px) {
-    .newsletter {
-        text-align: center;
-    }
-
-    .copy {
-        padding: 50px 0 0;
-    }
-}
-

@@ -17,6 +17,8 @@ footer {
 
 .newsletter {
     background-image: url(../img/background/color-bg.jpg);
+    background-color: rgba(200,100,0,.3); /* Tint color */
+    background-blend-mode: multiply;
     background-size: cover;
     min-width: 100%;
     display: flex;
@@ -25,13 +27,12 @@ footer {
     padding: 60px 0;
     font-size: 30px;
     h2 {
-        color: #959595;
-        mix-blend-mode: difference;
+        color: $light;
         font-size: 30px;
+        font-weight: 100;
     }
     p {
-        color: #959595;
-        mix-blend-mode: difference;
+        color: $light;
         font-weight: 400;
         margin-top: 5px;
     }
@@ -110,4 +111,24 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 80px 0 0;
+}
+
+/*--- Media Queries ---*/
+@media all and (max-width: 1024px) {
+    .newsletter form input {
+        width: 40vw;
+        &[type="submit"] {
+            width: 120px;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .newsletter {
+        text-align: center;
+    }
+
+    .copy {
+        padding: 50px 0 0;
+    }
 }

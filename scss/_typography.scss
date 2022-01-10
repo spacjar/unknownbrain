@@ -21,8 +21,31 @@ time, mark, audio, video {
     font-size: 100%;
 }
 
-.link-underline {
-    &:hover {
-        text-decoration: underline;
-    }
+h1,h2 {
+    font-size: 30px;
+    font-weight: 900;
 }
+
+h3,h4 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p, span, div, label {
+    font-family: circe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+a {
+    font-family: circe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $darker-light;
+}
+
