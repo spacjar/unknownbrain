@@ -86,13 +86,24 @@ video {
   vertical-align: baseline;
 }
 
+.list--unmarked {
+  li {
+    list-style: none;
+  }
+  a {
+    color: white; //fix this color
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0px 15px;
 }
 
-input,
+/*input,
 textarea {
   border: 1px solid $light;
   background-color: transparent;
@@ -105,8 +116,9 @@ input[type="submit"] {
   color: $dark;
   font-weight: 700;
 }
-
+*/
 /* --- Text style --- */
+/*
 .footer-links h3 {
   color: $light;
   font-weight: 200;
@@ -171,4 +183,4 @@ input[type="submit"] {
   height: 4px;
   transform: rotate(315deg);
   -webkit-transform: rotate(315deg);
-}
+}*/
