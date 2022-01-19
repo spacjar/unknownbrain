@@ -1,266 +1,64 @@
-.newest-release {
-  padding: 125px 0;
-  background-color: #fefefe;
-  overflow: hidden;
-  position: relative;
-  .text-bg {
-    position: absolute;
-    top: 20%;
-    left: -50px;
-    z-index: 0;
-    font-size: 220px;
-    font-family: Sequel, sans-serif;
-    color: #f5f5f5;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    .release-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      .label {
-        font-size: 15px;
-        font-weight: 100;
-      }
-      .song {
-        text-transform: uppercase;
-        font-size: 50px;
-        line-height: 50px;
-        margin: 0px 0 8px;
-      }
-      .artists {
-        font-size: 15px;
-        font-weight: 900;
-      }
-      .btn-dark {
-        border: 3px solid $dark;
-        background-color: transparent;
-        color: $dark;
-        font-weight: 900;
-        padding: 10px 80px;
-        &:hover,
-        &:focus {
-          color: $light;
-          background-color: $dark;
-          -webkit-transition: 0.3s ease-in-out;
-          -moz-transition: 0.3s ease-in-out;
-          -o-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
+.music {
+    background-color: #0A0A0A;
+    &__latest {
+        height: 300px;
+        background-color: #fff;
+    }
+
+    &__releases {
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
-      }
-      .top {
-        margin-bottom: 60px;
-      }
-    }
-    .release-right {
-      img {
-        width: 320px;
-        height: 320px;
-      }
-    }
-    & > * {
-      z-index: 1;
-    }
-  }
-}
-
-/*--- Card container ---*/
-.card-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: $light;
-  .year {
-    position: relative;
-    background-color: #000;
-    padding: 50px 0;
-    .container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-/*--- Card Design ---*/
-.card {
-  display: flex;
-  width: 50%;
-  margin: 20px 0;
-  h3,
-  a,
-  p {
-    color: #fefefe;
-  }
-  .card-text-top {
-    .label {
-      font-size: 15px;
-      font-weight: lighter;
-      max-width: 70%;
-    }
-    .song {
-      font-family: Sequel, sans-serif;
-      font-weight: 100;
-      max-width: 100%;
-      margin: 3px 0 5px;
-      font-size: 25px;
-      line-height: 28px;
-      text-transform: uppercase;
-    }
-    .musicians {
-      font-size: 15px;
-      font-weight: 100;
-      max-width: 80%;
-    }
-  }
-  .card-text {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 15px 30px;
-    flex: 2;
-    a {
-      font-size: 15px;
-      font-weight: 900;
-    }
-  }
-}
-
-.cover-img {
-  min-width: 200px;
-  min-height: 200px;
-  background-position: center;
-  background-size: cover;
-  background-size: 200px 200px;
-  object-fit: cover;
-  background-repeat: no-repeat;
-}
-
-@media all and (max-width: 1020px) {
-  .container {
-    max-width: 100%;
-  }
-  .card {
-    width: 100%;
-  }
-  .card-container .year .container {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .card-text {
-    padding: 30px 0;
-  }
-}
-
-@media all and (max-width: 800px) {
-  .newest-release {
-    padding: 100px 0;
-    .container {
-      flex-direction: column-reverse;
-      .release-left {
-        text-align: center;
-        margin-top: 10px;
-        .label {
-          font-size: 15px;
+        .music__year {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .music__popular {
+            background-color: #f4f4f4;
+            width: 100%;
+            height: 594px;
         }
         .song {
-          font-size: 25px;
-          line-height: 25px;
-          margin: 5px 0;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            padding: 20px 0;
+            &__cover {
+                min-width: 200px;
+                min-height: 200px;
+                width: 200px;
+                height: 200px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &__information {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 16px 0 16px 16px;
+                .song__btn {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            &__label {
+                color: #A5A5A5;
+            }
+            &__name {
+                color: #fff;
+                margin: 24px 0 8px;
+                max-width: 280px;
+            }
+            &__author {
+                color: #A5A5A5;
+            }
         }
-        .artists {
-          font-size: 15px;
-        }
-        .btn-dark {
-          padding: 10px 33%;
-        }
-        .top {
-          margin-bottom: 40px;
-        }
-        .bottom {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .release-right {
-        img {
-          width: 250px;
-          height: 250px;
-        }
-      }
-      & > * {
-        z-index: 1;
-      }
     }
-  }
-}
-
-@media all and (max-width: 540px) {
-  .container {
-    padding: 0 10px;
-  }
-  .card {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    .card-text {
-      padding: 0;
-    }
-    .card-text-top {
-      margin-top: 20px;
-      padding-left: 0px;
-      border-left: none;
-      .label {
-        max-width: 100%;
-        font-weight: 100;
-      }
-      .song {
-        max-width: 100%;
-        margin: 5px 0 8px;
-      }
-      .musicians {
-        max-width: 80%;
-        margin: 0 auto;
-      }
-    }
-  }
-  .cover-img {
-    width: 250px;
-    height: 250px;
-    background-size: 100% 100%;
-  }
-  .card-text-top {
-    padding-left: 0;
-    border-left: none;
-  }
-  .card-text {
-    padding: 10px 10px 0;
-    align-items: center;
-  }
-  .card-text-top .label {
-    max-width: 100%;
-  }
-
-  .card-text-top .song {
-    max-width: 100%;
-  }
-
-  .card-text-top .musicians {
-    max-width: 100%;
-  }
-
-  .card-text .link-underline {
-    margin-top: 25px;
-    text-align: center;
-  }
 }

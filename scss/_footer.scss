@@ -31,13 +31,18 @@
         background-color: transparent;
       }
       input {
-        color: $dark;
+        color: white;
         padding: 12px;
         margin-top: 20px;
-        //width: 400px;
+      }
+      .newsletter__email {
+        max-width: 400px;
+        width: 100%;
+        flex: 0.8;
       }
       input[type="submit"] {
-        //width: 128px;
+        flex: 0.2;
+        max-width: 128px;
         cursor: pointer;
       }
       input[type="submit"]:hover {
@@ -51,6 +56,25 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 96px;
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 2;
+    }
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 2;
+    }
+    &__social {
+      a:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
     &__block {
     }
     &__header {
@@ -71,6 +95,9 @@
         font-size: 18px;
         line-height: 16px;
         color: #a5a5a5;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
