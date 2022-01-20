@@ -766,6 +766,10 @@ input[type="submit"] {
       .music__releases .song__author {
         color: #a5a5a5; }
 
+@media screen and (max-width: 900px) {
+  .music .music__year {
+    flex-direction: column; } }
+
 @media screen and (max-width: 500px) {
   .music .container {
     padding: 32px; }

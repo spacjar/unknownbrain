@@ -67,6 +67,14 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .music {
+    .music__year {
+      flex-direction: column;
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .music {
     .container {
