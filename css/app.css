@@ -388,7 +388,8 @@ input[type="submit"] {
     .footer .newsletter__form {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
       .footer .newsletter__form input {
         border: 1px solid #4d4d4d;
         background-color: transparent; }
