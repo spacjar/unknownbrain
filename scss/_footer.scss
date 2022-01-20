@@ -174,8 +174,9 @@
 
 @media screen and (max-width: 500px) {
   .footer {
+    padding: 48px 0;
     .links {
-      margin-bottom: 88px;
+      margin-bottom: 56px;
       &__block {
         li:not(:last-child) {
           margin-bottom: 8px;

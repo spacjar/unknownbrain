@@ -506,20 +506,22 @@ input[type="submit"] {
           color: white; }
 
 @media screen and (max-width: 500px) {
-  .footer .links {
-    margin-bottom: 88px; }
-    .footer .links__block li:not(:last-child) {
-      margin-bottom: 8px; }
-    .footer .links__block a {
-      line-height: 24px; }
-    .footer .links__social a {
-      margin-top: 8px; }
-    .footer .links__header {
-      font-style: normal;
-      font-weight: 60;
-      font-size: 17px;
-      line-height: 24px;
-      margin-bottom: 16px; } }
+  .footer {
+    padding: 48px 0; }
+    .footer .links {
+      margin-bottom: 56px; }
+      .footer .links__block li:not(:last-child) {
+        margin-bottom: 8px; }
+      .footer .links__block a {
+        line-height: 24px; }
+      .footer .links__social a {
+        margin-top: 8px; }
+      .footer .links__header {
+        font-style: normal;
+        font-weight: 60;
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 16px; } }
 
 .header__images {
   display: flex; }
