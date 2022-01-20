@@ -368,23 +368,28 @@ input[type="submit"] {
   background-color: black;
   color: white;
   padding: 64px 0; }
+  .footer .container {
+    padding: 0 40px; }
   .footer .newsletter {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
     .footer .newsletter__heading {
       font-style: normal;
       font-weight: 60;
       font-size: 24px;
-      line-height: 108.5%; }
+      line-height: 108.5%;
+      text-transform: uppercase; }
       .footer .newsletter__heading--border {
-        color: none;
         font-family: Sequel, sans-serif;
-        font-style: normal;
-        border: none;
-        text-transform: uppercase; }
+        color: white;
+        -webkit-text-fill-color: black;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white; }
     .footer .newsletter__form {
       display: flex;
       justify-content: center;
@@ -397,41 +402,67 @@ input[type="submit"] {
         color: white;
         padding: 12px;
         margin-top: 20px; }
+        .footer .newsletter__form input::placeholder {
+          font-family: Archivo;
+          font-style: normal;
+          color: #4d4d4d;
+          font-weight: regular;
+          font-size: 12px;
+          line-height: 12px; }
       .footer .newsletter__form .newsletter__email {
         max-width: 400px;
         width: 100%;
         flex: 0.8; }
       .footer .newsletter__form input[type="submit"] {
+        font-family: Archivo;
+        font-style: normal;
+        padding: 13.5px;
         flex: 0.2;
         max-width: 128px;
-        cursor: pointer; }
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px; }
       .footer .newsletter__form input[type="submit"]:hover {
-        background-color: #f4f4f4; }
+        background-color: #f4f4f4;
+        color: black; }
   .footer .links {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 96px; }
+    margin-bottom: 88px; }
     .footer .links__left {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
       flex: 2; }
+      .footer .links__left .links__block {
+        margin-right: 15px; }
     .footer .links__right {
       display: flex;
       justify-content: flex-end;
       flex-direction: row;
       flex-wrap: wrap;
       flex: 2; }
-    .footer .links__social a:not(:last-child) {
-      margin-right: 16px; }
+      .footer .links__right .links__header {
+        margin-bottom: 16px; }
+    .footer .links__block {
+      margin-top: 32px; }
+    .footer .links__social {
+      display: flex;
+      flex-wrap: wrap; }
+      .footer .links__social a {
+        margin-top: 8px; }
+      .footer .links__social a:not(:last-child) {
+        margin-right: 16px; }
     .footer .links__header {
       font-style: normal;
       font-weight: 60;
       font-size: 17px;
-      line-height: 16px;
+      line-height: 24px;
       margin-bottom: 24px; }
     .footer .links__list li:not(:last-child) {
       margin-bottom: 16px; }
@@ -455,11 +486,13 @@ input[type="submit"] {
       font-weight: normal;
       font-size: 14px;
       line-height: 16px;
-      color: #a5a5a5; }
+      color: #a5a5a5;
+      margin-top: 8px; }
     .footer .links-end__list {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-top: 8px; }
       .footer .links-end__list li:not(:last-child) {
         margin-right: 24px; }
       .footer .links-end__list a {
@@ -469,6 +502,8 @@ input[type="submit"] {
         font-size: 14px;
         line-height: 16px;
         color: #a5a5a5; }
+        .footer .links-end__list a:hover {
+          color: white; }
 
 .header__images {
   display: flex; }
@@ -658,54 +693,68 @@ input[type="submit"] {
     width: 80vw; } }
 
 .music {
-  background-color: #0A0A0A; }
+  background-color: #0a0a0a; }
   .music__latest {
     height: 300px;
     background-color: #fff; }
-  .music__releases .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column; }
-  .music__releases .music__year {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex: 1; }
-  .music__releases .music__popular {
-    background-color: #f4f4f4;
-    width: 100%;
-    height: 594px; }
-  .music__releases .song {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    padding: 20px 0; }
-    .music__releases .song__cover {
-      min-width: 200px;
-      min-height: 200px;
-      width: 200px;
-      height: 200px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .music__releases .song__information {
+  .music__releases {
+    padding: 88px 0; }
+    .music__releases .container {
       display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      padding: 16px 0 16px 16px; }
-      .music__releases .song__information .song__btn {
-        text-decoration: none;
-        color: #fff; }
-    .music__releases .song__label {
-      color: #A5A5A5; }
-    .music__releases .song__name {
-      color: #fff;
-      margin: 24px 0 8px;
-      max-width: 280px; }
-    .music__releases .song__author {
-      color: #A5A5A5; }
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column; }
+    .music__releases .music__year {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex: 1; }
+      .music__releases .music__year:not(:last-child) {
+        margin-bottom: 40px; }
+    .music__releases .music__popular {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 594px; }
+    .music__releases .song {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      padding: 20px 0; }
+      .music__releases .song__cover {
+        min-width: 200px;
+        min-height: 200px;
+        width: 200px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .music__releases .song__information {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 16px 0 16px 16px; }
+        .music__releases .song__information .song__btn {
+          text-decoration: none;
+          color: #fff; }
+      .music__releases .song__label {
+        color: #a5a5a5; }
+      .music__releases .song__name {
+        color: #fff;
+        margin: 24px 0 8px;
+        max-width: 280px; }
+      .music__releases .song__author {
+        color: #a5a5a5; }
+
+@media screen and (max-width: 500px) {
+  .music .song {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .music .song__cover {
+      width: 100%;
+      height: 100%; } }
 
 /* --- Tour Header ---*/
 .intro {

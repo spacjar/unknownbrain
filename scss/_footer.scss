@@ -2,24 +2,29 @@
   background-color: black;
   color: white;
   padding: 64px 0;
+  .container {
+    padding: 0 40px;
+  }
   .newsletter {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     &__heading {
       font-style: normal;
       font-weight: 60;
       font-size: 24px;
       line-height: 108.5%;
+      text-transform: uppercase;
       &--border {
         //TODO - font border
-        color: none;
         font-family: Sequel, sans-serif;
-        font-style: normal;
-        border: none;
-        text-transform: uppercase;
+        color: white;
+        -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white;
       }
     }
     &__form {
@@ -35,6 +40,14 @@
         color: white;
         padding: 12px;
         margin-top: 20px;
+        &::placeholder {
+          font-family: Archivo;
+          font-style: normal;
+          color: #4d4d4d;
+          font-weight: regular;
+          font-size: 12px;
+          line-height: 12px;
+        }
       }
       .newsletter__email {
         max-width: 400px;
@@ -42,12 +55,20 @@
         flex: 0.8;
       }
       input[type="submit"] {
+        font-family: Archivo;
+        font-style: normal;
+        padding: 13.5px;
         flex: 0.2;
         max-width: 128px;
         cursor: pointer;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
       }
       input[type="submit"]:hover {
         background-color: #f4f4f4;
+        color: black;
       }
     }
   }
@@ -56,13 +77,16 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 96px;
+    margin-bottom: 88px;
     &__left {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
       flex: 2;
+      .links__block {
+        margin-right: 15px;
+      }
     }
     &__right {
       display: flex;
@@ -70,19 +94,28 @@
       flex-direction: row;
       flex-wrap: wrap;
       flex: 2;
-    }
-    &__social {
-      a:not(:last-child) {
-        margin-right: 16px;
+      .links__header {
+        margin-bottom: 16px;
       }
     }
     &__block {
+      margin-top: 32px;
+    }
+    &__social {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        margin-top: 8px;
+      }
+      a:not(:last-child) {
+        margin-right: 16px;
+      }
     }
     &__header {
       font-style: normal;
       font-weight: 60;
       font-size: 17px;
-      line-height: 16px;
+      line-height: 24px;
       margin-bottom: 24px;
     }
     &__list {
@@ -114,11 +147,13 @@
       font-size: 14px;
       line-height: 16px;
       color: #a5a5a5;
+      margin-top: 8px;
     }
     &__list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-top: 8px;
       li:not(:last-child) {
         margin-right: 24px;
       }
@@ -129,6 +164,9 @@
         font-size: 14px;
         line-height: 16px;
         color: #a5a5a5;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
