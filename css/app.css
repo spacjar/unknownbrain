@@ -381,7 +381,7 @@ input[type="submit"] {
       font-style: normal;
       font-weight: 60;
       font-size: 24px;
-      line-height: 108.5%;
+      line-height: 32px;
       text-transform: uppercase; }
       .footer .newsletter__heading--border {
         font-family: Sequel, sans-serif;
@@ -504,6 +504,22 @@ input[type="submit"] {
         color: #a5a5a5; }
         .footer .links-end__list a:hover {
           color: white; }
+
+@media screen and (max-width: 500px) {
+  .footer .links {
+    margin-bottom: 88px; }
+    .footer .links__block li:not(:last-child) {
+      margin-bottom: 8px; }
+    .footer .links__block a {
+      line-height: 24px; }
+    .footer .links__social a {
+      margin-top: 8px; }
+    .footer .links__header {
+      font-style: normal;
+      font-weight: 60;
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 16px; } }
 
 .header__images {
   display: flex; }
