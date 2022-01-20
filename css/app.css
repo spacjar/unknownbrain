@@ -507,7 +507,7 @@ input[type="submit"] {
 
 @media screen and (max-width: 500px) {
   .footer {
-    padding: 48px 0; }
+    padding: 32px 0; }
     .footer .links {
       margin-bottom: 56px; }
       .footer .links__block li:not(:last-child) {
@@ -765,6 +765,8 @@ input[type="submit"] {
         color: #a5a5a5; }
 
 @media screen and (max-width: 500px) {
+  .music .container {
+    padding: 32px; }
   .music .music__year {
     flex-direction: column; }
     .music .music__year .song {
@@ -775,7 +777,7 @@ input[type="submit"] {
       .music .music__year .song__cover {
         position: relative;
         width: 100%;
-        height: 90vw; }
+        height: 80vw; }
       .music .music__year .song__information {
         padding: 16px 0; }
         .music .music__year .song__information .song__name {
