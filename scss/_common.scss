@@ -108,84 +108,19 @@ video {
   }
 }
 
-/*input,
-textarea {
-  border: 1px solid $light;
-  background-color: transparent;
-  color: $light;
-  padding: 12px;
+.border {
+  &--black {
+    font-family: Sequel, sans-serif;
+    color: white;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+  &--white {
+    font-family: Sequel, sans-serif;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
 }
-
-input[type="submit"] {
-  background-color: $light;
-  color: $dark;
-  font-weight: 700;
-}
-*/
-/* --- Text style --- */
-/*
-.footer-links h3 {
-  color: $light;
-  font-weight: 200;
-}
-
-.footer-links li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: $darker-light;
-  font-weight: 100;
-}
-
-.footer-links li {
-  color: $darker-light;
-  font-weight: 400;
-}
-
-.footer-links a:hover {
-  cursor: pointer;
-  color: $light;
-}
-
-.copy p {
-  color: $light;
-}
-
-.copy p:nth-child(2) {
-  color: $darker-light;
-}
-
-.copy a {
-  color: $light;
-}
-
-.copy span {
-  color: $darker-light;
-}
-
-.link-underline {
-  width: 90px;
-  position: relative;
-}
-
-.link-underline:hover,
-.link-underline:focus {
-  border-bottom: 2px solid $light;
-}
-
-.link-underline::after {
-  content: "";
-  position: absolute;
-  top: 33%;
-  right: 0;
-  border: 1px solid $light;
-  border-width: 0 4px 4px 0;
-  border-radius: 0px 2px;
-  width: 4px;
-  height: 4px;
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}*/
