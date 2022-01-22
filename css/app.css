@@ -283,87 +283,22 @@ video {
   .container--wide {
     max-width: 1264px; }
 
-/*input,
-textarea {
-  border: 1px solid $light;
-  background-color: transparent;
-  color: $light;
-  padding: 12px;
-}
+.border--black {
+  font-family: Sequel, sans-serif;
+  color: white;
+  -webkit-text-fill-color: black;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white; }
 
-input[type="submit"] {
-  background-color: $light;
-  color: $dark;
-  font-weight: 700;
-}
-*/
-/* --- Text style --- */
-/*
-.footer-links h3 {
-  color: $light;
-  font-weight: 200;
-}
+.border--white {
+  font-family: Sequel, sans-serif;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
 
-.footer-links li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: $darker-light;
-  font-weight: 100;
-}
-
-.footer-links li {
-  color: $darker-light;
-  font-weight: 400;
-}
-
-.footer-links a:hover {
-  cursor: pointer;
-  color: $light;
-}
-
-.copy p {
-  color: $light;
-}
-
-.copy p:nth-child(2) {
-  color: $darker-light;
-}
-
-.copy a {
-  color: $light;
-}
-
-.copy span {
-  color: $darker-light;
-}
-
-.link-underline {
-  width: 90px;
-  position: relative;
-}
-
-.link-underline:hover,
-.link-underline:focus {
-  border-bottom: 2px solid $light;
-}
-
-.link-underline::after {
-  content: "";
-  position: absolute;
-  top: 33%;
-  right: 0;
-  border: 1px solid $light;
-  border-width: 0 4px 4px 0;
-  border-radius: 0px 2px;
-  width: 4px;
-  height: 4px;
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}*/
 .footer {
   background-color: black;
   color: white;
@@ -509,7 +444,7 @@ input[type="submit"] {
   .footer {
     padding: 24px 0; }
     .footer .container {
-      padding: 32px; }
+      padding: 24px; }
     .footer .links {
       margin-bottom: 56px; }
       .footer .links__block li:not(:last-child) {
@@ -854,3 +789,70 @@ input[type="submit"] {
   .songkick div {
     width: 92vw;
     max-width: 92vw; } }
+
+.contact {
+  background-color: #f8f8f8; }
+  .contact .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    padding-bottom: 200px; }
+  .contact .contact__left {
+    flex: 1; }
+  .contact .contact__right {
+    flex: 1.5; }
+    .contact .contact__right .contact__form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 80%; }
+      .contact .contact__right .contact__form .contact__input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px; }
+        .contact .contact__right .contact__form .contact__input .form__input {
+          background-color: white;
+          border: 1px solid #9a9a9a;
+          height: 48px;
+          padding: 0 16px;
+          font-size: 14px;
+          min-width: 100px; }
+          .contact .contact__right .contact__form .contact__input .form__input::placeholder {
+            color: rgba(10, 10, 10, 0.18);
+            font-size: 14px; }
+        .contact .contact__right .contact__form .contact__input .form__label {
+          margin-bottom: 8px; }
+        .contact .contact__right .contact__form .contact__input .form__submit {
+          padding: 18px 0;
+          width: 100%;
+          background-color: black;
+          color: white; }
+      .contact .contact__right .contact__form .input--half {
+        width: 47%; }
+      .contact .contact__right .contact__form .input--full {
+        width: 100%; }
+
+@media screen and (max-width: 800px) {
+  .contact {
+    background-color: #f8f8f8; }
+    .contact .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 200px;
+      padding-bottom: 200px; }
+    .contact .contact__left {
+      flex: 1; }
+    .contact .contact__right {
+      flex: 1.5; }
+      .contact .contact__right .contact__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%; }
+        .contact .contact__right .contact__form .input--half {
+          width: 100%; }
+        .contact .contact__right .contact__form .input--full {
+          width: 100%; } }
