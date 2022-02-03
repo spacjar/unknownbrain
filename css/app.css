@@ -180,6 +180,9 @@ h5 {
   .pl--bold {
     font-weight: 600; }
 
+input, textarea {
+  font-family: "Archivo", sans-serif; }
+
 /* --- CSS Default settings --- */
 html,
 body,
@@ -806,7 +809,7 @@ video {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 80%; }
+      width: 70%; }
       .contact .contact__right .contact__form .contact__input {
         display: flex;
         flex-direction: column;
@@ -821,6 +824,9 @@ video {
           .contact .contact__right .contact__form .contact__input .form__input::placeholder {
             color: rgba(10, 10, 10, 0.18);
             font-size: 14px; }
+        .contact .contact__right .contact__form .contact__input textarea.form__input {
+          padding: 16px;
+          resize: vertical; }
         .contact .contact__right .contact__form .contact__input .form__label {
           margin-bottom: 8px; }
         .contact .contact__right .contact__form .contact__input .form__submit {
@@ -829,7 +835,7 @@ video {
           background-color: black;
           color: white; }
       .contact .contact__right .contact__form .input--half {
-        width: 47%; }
+        width: 48%; }
       .contact .contact__right .contact__form .input--full {
         width: 100%; }
 
@@ -852,6 +858,10 @@ video {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%; }
+        .contact .contact__right .contact__form textarea {
+          padding: 12px 16px;
+          font-family: 'Archivo';
+          height: 80px; }
         .contact .contact__right .contact__form .input--half {
           width: 100%; }
         .contact .contact__right .contact__form .input--full {
