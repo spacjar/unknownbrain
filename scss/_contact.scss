@@ -16,7 +16,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 80%;
+      width: 70%;
       .contact__input {
         display: flex;
         flex-direction: column;
@@ -33,6 +33,10 @@
             font-size: 14px;
           }
         }
+        textarea.form__input {
+          padding: 16px;
+          resize: vertical;
+        }
         .form__label {
           margin-bottom: 8px;
         }
@@ -44,7 +48,7 @@
         }
       }
       .input--half {
-        width: 47%;
+        width: 48%;
       }
       .input--full {
         width: 100%;
@@ -81,6 +85,11 @@
           }
           .form__submit {
           }
+        }
+        textarea {
+          padding: 12px 16px;
+          font-family: 'Archivo';
+          height: 80px;
         }
         .input--half {
           width: 100%;
