@@ -140,6 +140,7 @@ h5 {
     -webkit-text-stroke-color: #f0f0f0; }
 
 .l-h {
+  font-family: Sequel, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 60px;
@@ -287,6 +288,8 @@ video {
 .container {
   margin: 0 auto;
   padding: 0px 24px; }
+  .container--snarrow {
+    max-width: 1080px; }
   .container--narrow {
     max-width: 1104px; }
   .container--wide {
@@ -469,8 +472,66 @@ video {
         line-height: 24px;
         margin-bottom: 16px; } }
 
-.header__images {
-  display: flex; }
+.header {
+  background-color: #0a0a0a;
+  padding: 160px 0 240px; }
+  .header__images {
+    position: relative;
+    overflow: hidden; }
+    .header__images .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%; }
+    .header__images .header__image {
+      width: 50%;
+      height: 540px;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+    .header__images .header__image-wb {
+      margin-top: 40px;
+      background-image: url("../img/WB.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .header__images .header__image-bb {
+      background-image: url("../img/BB.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .header__images .header__titles {
+      overflow: hidden;
+      position: absolute;
+      top: 35%;
+      color: white; }
+      .header__images .header__titles--row {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: keep-all; }
+
+.story {
+  background-color: #0a0a0a;
+  color: white; }
+  .story .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .story .container ul {
+      list-style: none; }
+      .story .container ul li {
+        font-family: Sequel, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 34px;
+        line-height: 48px;
+        text-transform: uppercase; }
+  .story .story__block {
+    max-width: 480px;
+    margin-bottom: 104px; }
+    .story .story__block p:not(:last-child) {
+      margin-bottom: 24px; }
 
 .btn-dark {
   border: 3px solid #0F1116;
@@ -693,7 +754,7 @@ video {
         font-weight: 60;
         font-size: 48px;
         line-height: 56px;
-        max-width: 440px;
+        max-width: 480px;
         margin: 16px 0 8px; }
       .music__latest .latest__song .latest__info {
         display: flex;
