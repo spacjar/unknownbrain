@@ -100,6 +100,9 @@ video {
 .container {
   margin: 0 auto;
   padding: 0px 24px;
+  &--snarrow {
+    max-width: 1080px;
+  }
   &--narrow {
     max-width: 1104px;
   }
