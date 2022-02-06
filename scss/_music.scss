@@ -24,7 +24,7 @@
       }
       .music__popular {
         width: 100%;
-        margin-bottom: 88px;
+        margin-bottom: 40px;
         .popular {
           &__video {
             height: 594px;
@@ -37,7 +37,7 @@
             margin: 24px 0 8px;
           }
           &__artists {
-            color: #A5A5A5;
+            color: #a5a5a5;
           }
         }
       }
@@ -61,19 +61,63 @@
           flex-direction: column;
           padding: 16px 0 16px 16px;
           .song__btn {
+            width: fit-content;
+            position: relative;
             text-decoration: none;
             color: #fff;
+            &::before {
+              content: "";
+              position: absolute;
+              border: 1px solid #fff;
+              width: 16px;
+              top: 43%;
+              right: 0%;
+              margin-left: 8px;
+            }
+            &::after {
+              content: "";
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              padding: 3px;
+              margin-left: 24px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              top: 40%;
+              left: 120%;
+            }
+          }
+          .ps {
+            line-height: 16px;
           }
         }
-        &__label {
-          color: #a5a5a5;
+        &__info {
+          display: flex;
+          flex-direction: row;
+          .song__label,
+          .song__date {
+            color: #a5a5a5;
+          }
+          .song__label {
+            position: relative;
+            margin-right: 40px;
+            &::after {
+              content: "";
+              position: absolute;
+              border: 1px solid #a5a5a5;
+              width: 24px;
+              top: 40%;
+              left: 106%;
+            }
+          }
         }
         &__name {
           color: #fff;
-          margin: 24px 0 8px;
+          margin: 20px 0 8px;
           max-width: 280px;
         }
         &__author {
+          max-width: 240px;
           color: #a5a5a5;
         }
       }
