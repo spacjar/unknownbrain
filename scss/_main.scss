@@ -1,23 +1,77 @@
-/*text-rendering: optimizeLegibility;*/
-
-.promotion {
-    height: 100vh;
-    background-image: url(../img/background/chapter-II.png);
-    background-size: cover;
-    .container {
-        .text-center {
-            color: #FFFFFF;
-            text-transform: uppercase;
-            mix-blend-mode: difference;
-        }
-    }    
-}
-
-.song-promotion {
-    background-color: #0F1116;
+.header {
+  background-color: #0a0a0a;
+  &__images {
+    position: relative;
     overflow: hidden;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .header__image {
+      width: 50%;
+      height: 540px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    .header__image-wb {
+      margin-top: 40px;
+      background-image: url("../img/WB.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .header__image-bb {
+      background-image: url("../img/BB.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .header__titles {
+      overflow: hidden;
+      position: absolute;
+      top: 35%;
+      color: white;
+      &--row {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: keep-all;
+      }
+    }
+  }
+  padding: 160px 0 240px;
 }
 
-.community {
-    background-color: #FFFFFF;
+.story {
+  background-color: #0a0a0a;
+  color: white;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      li {
+        font-family: Sequel, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 34px;
+        line-height: 48px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .story {
+    &__text {
+    }
+    &__block {
+      max-width: 480px;
+      margin-bottom: 104px;
+      p:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }

@@ -5,15 +5,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/UB-party.png);
-    background-position: center 15%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/background/bg.png);
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $light;
-}
-
-.intro h1 {
-    font-weight: 900;
-    font-size: 30px;
-    text-align: center;
+    h1 {
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+    }
 }
 
 /*--- SongKick ---*/
@@ -31,7 +32,7 @@
 }
 
 .songkick > * {
-    min-width: 80vw;
+    min-width: 100%;
 }
 
 /*--- Title text ---*/

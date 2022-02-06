@@ -1,205 +1,511 @@
-.new-releases {
-    height: 60vh;
-    background-color: $dark;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-releases .card-text-top > * {
-    color: #fff;
-}
-
-/*--- Realeases Header ---*/
-.releases-header {
-    padding: 40px 0 20px;
-    background-color: $light;
-}
-
-.releases-header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: $dark;
-}
-
-.releases-header h3 {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.releases-header ul {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.releases-header li {
-    cursor: pointer;
-    margin: 0 5px;
-    font-size: 19px;
-    font-weight: 300;
-    color: #353535;
-}
-
-.releases-header li:hover {
-    font-weight: 500;
-    color: $dark;
-}
-
-.releases-header li:first-child {
-    font-weight: 900;
-    color: $dark;
-}
-
-/*--- Card container ---*/
-.card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card-container .year {
-    background-color: #FFFFFF;
-    padding: 50px 0;
-}
-
-.card-container .year:nth-child(2n) {
-    background-color: #F4F4F4;
-}
-
-.card-container .year .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.card-container .year {
-    background-color: $light;
-}
-
-.card-container .year:nth-child(2) {
-    background-color: #F4F4F4;
-}
-
-/*--- Card Design ---*/
-.card {
-    display: flex;
-    width: 50%;
-    margin: 20px 0;
-}
-
-.card h3,a,p {
-    color: #000000;
-}
-
-.cover-img {
-    min-width: 200px;
-    min-height: 200px;
-    background-position: center;
-    background-size: cover;
-    background-size: 200px 200px;
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
-
-.card-text-top {
-    padding-left: 5px;
-    border-left: 3px solid #000000;
-}
-
-.card-text-top .label {
-    font-size: 13px;
-    font-weight: 900;
-    max-width: 70%;
-}
-
-.card-text-top .song {
-    max-width: 100%;
-    margin: 8px 0 3px;
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-
-.card-text-top .musicians{
-    font-size: 13px;
-    max-width: 80%;
-}
-
-.card-text a {
-    font-size: 13px;
-    font-weight: 900;
-}
-
-.card-text {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 30px;
-    flex: 2;
-}
-
-@media all and (max-width: 1000px) {
+.music {
+  background-color: #0a0a0a;
+  &__latest {
+    padding: 200px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    .music__bg__title {
+      position: absolute;
+      transform: rotate(90deg);
+      right: -40%;
+      bottom: 0%;
+      overflow: hidden;
+      width: fit-content;
+      line-height: 120px;
+      word-break: keep-all;
+      z-index: 0;
+    }
+    .latest__song {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      padding: 0 48px;
+      .latest {
+        &__cover {
+          width: 350px;
+          height: 350px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        &__name {
+          font-family: Sequel 100 Wide;
+          font-style: normal;
+          font-weight: 60;
+          font-size: 48px;
+          line-height: 56px;
+          max-width: 480px;
+          margin: 16px 0 8px;
+        }
+        &__info {
+          display: flex;
+          flex-direction: row;
+          .latest__label {
+            position: relative;
+            margin-right: 48px;
+            &::after {
+              content: "";
+              position: absolute;
+              border: 1px solid #000;
+              width: 24px;
+              top: 40%;
+              left: 106%;
+            }
+          }
+        }
+        &__label {
+        }
+        &__btn {
+          display: block;
+          width: fit-content;
+          text-decoration: none;
+          color: #000;
+          margin-top: 40px;
+          padding: 16px 32px;
+          border: 2px solid #000;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &__releases {
+    padding: 88px 0;
     .container {
-        padding: 0 40px;
-        max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
     }
-    .card {
-        width: 100%
+    .music__year {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex: 1;
+      &:not(:last-child) {
+        margin-bottom: 64px;
+      }
+      .music__header {
+        color: #fff;
+        margin-bottom: 16px;
+      }
+      .music__popular {
+        width: 100%;
+        margin-bottom: 40px;
+        .popular {
+          &__video {
+            height: 594px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &__header {
+            color: white;
+            margin: 8px 0;
+          }
+          &__artists {
+            color: #a5a5a5;
+          }
+          &__layout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            .popular__btn {
+              width: fit-content;
+              position: relative;
+              text-decoration: none;
+              color: #fff;
+              padding: 16px 24px;
+              border: 0.5px solid #a5a5a5;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .song {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+        &__cover {
+          min-width: 200px;
+          min-height: 200px;
+          width: 200px;
+          height: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        &__information {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 16px 0 16px 16px;
+          .song__btn {
+            width: fit-content;
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            &::before {
+              content: "";
+              position: absolute;
+              border: 1px solid #fff;
+              width: 16px;
+              top: 48%;
+              right: 0%;
+              margin-left: 8px;
+            }
+            &::after {
+              content: "";
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              padding: 2px;
+              margin-left: 24px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+            }
+          }
+          .ps {
+            line-height: 16px;
+          }
+        }
+        &__info {
+          display: flex;
+          flex-direction: row;
+          .song__label,
+          .song__date {
+            color: #a5a5a5;
+          }
+          .song__label {
+            position: relative;
+            margin-right: 40px;
+            &::after {
+              content: "";
+              position: absolute;
+              border: 1px solid #a5a5a5;
+              width: 24px;
+              top: 40%;
+              left: 106%;
+            }
+          }
+        }
+        &__name {
+          color: #fff;
+          margin: 20px 0 8px;
+          max-width: 280px;
+        }
+        &__author {
+          max-width: 240px;
+          color: #a5a5a5;
+        }
+      }
     }
-    .card-container .year .container {
-        justify-content: center;
-        flex-direction: column;
-    }
-    .card-text {
-        padding: 30px 10px;
-    }
+  }
 }
 
-@media all and (max-width: 500px) {
-    .container {
-        padding: 0 10px;
+@media screen and (max-width: 950px) {
+  .music {
+    &__latest {
+      padding: 160px 0;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+      .music__bg__title {
+        position: absolute;
+        transform: rotate(90deg);
+        right: -40%;
+        bottom: 0%;
+        overflow: hidden;
+        width: fit-content;
+        line-height: 120px;
+        word-break: keep-all;
+        z-index: 0;
+      }
+      .latest__song {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        padding: 0 48px;
+        .latest {
+          &__cover {
+            width: 250px;
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          &__name {
+            font-family: Sequel 100 Wide;
+            font-style: normal;
+            font-weight: 60;
+            font-size: 48px;
+            line-height: 56px;
+            max-width: 440px;
+            margin: 16px 0 8px;
+          }
+          &__info {
+            display: flex;
+            flex-direction: row;
+            .latest__label {
+              position: relative;
+              margin-right: 48px;
+              &::after {
+                content: "";
+                position: absolute;
+                border: 1px solid #000;
+                width: 24px;
+                top: 40%;
+                left: 106%;
+              }
+            }
+          }
+          &__label {
+          }
+          &__btn {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            color: #000;
+            margin-top: 40px;
+            padding: 16px 32px;
+            border: 2px solid #000;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
     }
-    .card {
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .music {
+    &__latest {
+      .latest__song {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        .latest {
+          &__cover {
+            width: 250px;
+            height: 250px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          &__name {
+            font-family: Sequel 100 Wide;
+            font-style: normal;
+            font-weight: 60;
+            font-size: 48px;
+            line-height: 56px;
+            max-width: 440px;
+            margin: 16px 0 8px;
+          }
+          &__info {
+            display: flex;
+            flex-direction: row;
+            .latest__label {
+              position: relative;
+              margin-right: 48px;
+              &::after {
+                content: "";
+                position: absolute;
+                border: 1px solid #000;
+                width: 24px;
+                top: 40%;
+                left: 106%;
+              }
+            }
+          }
+          &__label {
+          }
+          &__btn {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            color: #000;
+            margin-top: 40px;
+            padding: 16px 32px;
+            border: 2px solid #000;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .music {
+    &__latest {
+      .latest__song {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .latest {
+          &__cover {
+            width: 100%;
+            height: 80vw;
+            margin-bottom: 32px;
+            min-width: 200px;
+            min-height: 200px;
+          }
+          &__name {
+            font-family: Sequel 100 Wide;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 34px;
+            line-height: 40px;
+            max-width: 440px;
+            margin: 16px 0 8px;
+          }
+          &__btn {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            color: #000;
+            margin-top: 40px;
+            padding: 16px 32px;
+            border: 2px solid #000;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .music {
+    &__latest {
+      padding: 80px 0;
+      .latest__song {
+        .latest {
+          &__cover {
+            width: 100%;
+            height: 80vw;
+            margin-bottom: 32px;
+            min-width: 200px;
+            min-height: 200px;
+          }
+          &__info {
+            .latest__label {
+              position: relative;
+              margin-right: 40px;
+            }
+            & > * {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 12px;
+            }
+          }
+          &__name {
+            font-family: Sequel, sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 34px;
+            line-height: 40px;
+            max-width: 440px;
+            margin: 8px 0 8px;
+          }
+          &__author {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 12px;
+          }
+          &__btn {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            color: #000;
+            margin-top: 40px;
+            padding: 16px 32px;
+            border: 2px solid #000;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .music {
+    .music__year {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .music {
+    &__releases {
+      .music__year {
+        .music__popular {
+          .popular {
+            &__layout {
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              .popular__btn {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .music {
+    .container {
+      padding: 32px;
+    }
+    .music__year {
+      flex-direction: column;
+      .song {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        &__cover {
+          position: relative;
+          width: 100%;
+          height: 80vw;
+        }
+        &__information {
+          padding: 16px 0;
+          .song__name {
+            margin: 16px 0 8px;
+          }
+          .song__btn {
+            margin-top: 32px;
+            width: fit-content;
+          }
+        }
+      }
     }
-    .cover-img {
-        width: 250px;
-        height: 250px;
-        background-size: 100% 100%;
-    }
-    .card-text-top {
-        padding-left: 0;
-        border-left: none;
-    }
-    .card-text {
-        padding: 10px 10px 0;
-        align-items: center;
-    }
-    .card-text-top .label {
-        max-width: 100%;
-    }
-    
-    .card-text-top .song {
-        max-width: 100%;
-    }
-    
-    .card-text-top .musicians{
-        font-size: 13px;
-        max-width: 100%;
-    }
-    
-    .card-text .link-underline {
-        margin-top: 10px;
-        text-align: center;
-    }
+  }
 }
