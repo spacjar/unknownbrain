@@ -139,10 +139,16 @@ h5 {
 }
 
 .exl-h {
+  font-family: Sequel, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 144px;
   line-height: 64px;
+  &--bg {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f0f0f0;
+  }
 }
 
 .l-h {
@@ -205,6 +211,7 @@ h5 {
   }
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "Archivo", sans-serif;
 }

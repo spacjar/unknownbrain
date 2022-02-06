@@ -129,10 +129,15 @@ h5 {
   line-height: 16px; }
 
 .exl-h {
+  font-family: Sequel, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 144px;
   line-height: 64px; }
+  .exl-h--bg {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f0f0f0; }
 
 .l-h {
   font-style: normal;
@@ -180,7 +185,8 @@ h5 {
   .pl--bold {
     font-weight: 600; }
 
-input, textarea {
+input,
+textarea {
   font-family: "Archivo", sans-serif; }
 
 /* --- CSS Default settings --- */
@@ -653,8 +659,65 @@ video {
 .music {
   background-color: #0a0a0a; }
   .music__latest {
-    height: 500px;
-    background-color: #fff; }
+    padding: 200px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; }
+    .music__latest .music__bg__title {
+      position: absolute;
+      transform: rotate(90deg);
+      right: -40%;
+      bottom: 0%;
+      overflow: hidden;
+      width: fit-content;
+      line-height: 120px;
+      word-break: keep-all;
+      z-index: 0; }
+    .music__latest .latest__song {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      padding: 0 48px; }
+      .music__latest .latest__song .latest__cover {
+        width: 350px;
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%; }
+      .music__latest .latest__song .latest__name {
+        font-family: Sequel 100 Wide;
+        font-style: normal;
+        font-weight: 60;
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 440px;
+        margin: 16px 0 8px; }
+      .music__latest .latest__song .latest__info {
+        display: flex;
+        flex-direction: row; }
+        .music__latest .latest__song .latest__info .latest__label {
+          position: relative;
+          margin-right: 48px; }
+          .music__latest .latest__song .latest__info .latest__label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #000;
+            width: 24px;
+            top: 40%;
+            left: 106%; }
+      .music__latest .latest__song .latest__btn {
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        color: #000;
+        margin-top: 40px;
+        padding: 16px 32px;
+        border: 2px solid #000;
+        font-size: 14px;
+        font-weight: 600; }
   .music__releases {
     padding: 88px 0; }
     .music__releases .container {
@@ -669,10 +732,10 @@ video {
       flex-direction: row;
       flex: 1; }
       .music__releases .music__year:not(:last-child) {
-        margin-bottom: 40px; }
+        margin-bottom: 64px; }
       .music__releases .music__year .music__header {
         color: #fff;
-        margin-bottom: 8px; }
+        margin-bottom: 16px; }
       .music__releases .music__year .music__popular {
         width: 100%;
         margin-bottom: 40px; }
@@ -767,6 +830,184 @@ video {
           max-width: 240px;
           color: #a5a5a5; }
 
+@media screen and (max-width: 950px) {
+  .music__latest {
+    padding: 160px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; }
+    .music__latest .music__bg__title {
+      position: absolute;
+      transform: rotate(90deg);
+      right: -40%;
+      bottom: 0%;
+      overflow: hidden;
+      width: fit-content;
+      line-height: 120px;
+      word-break: keep-all;
+      z-index: 0; }
+    .music__latest .latest__song {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      padding: 0 48px; }
+      .music__latest .latest__song .latest__cover {
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%; }
+      .music__latest .latest__song .latest__name {
+        font-family: Sequel 100 Wide;
+        font-style: normal;
+        font-weight: 60;
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 440px;
+        margin: 16px 0 8px; }
+      .music__latest .latest__song .latest__info {
+        display: flex;
+        flex-direction: row; }
+        .music__latest .latest__song .latest__info .latest__label {
+          position: relative;
+          margin-right: 48px; }
+          .music__latest .latest__song .latest__info .latest__label::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #000;
+            width: 24px;
+            top: 40%;
+            left: 106%; }
+      .music__latest .latest__song .latest__btn {
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        color: #000;
+        margin-top: 40px;
+        padding: 16px 32px;
+        border: 2px solid #000;
+        font-size: 14px;
+        font-weight: 600; } }
+
+@media screen and (max-width: 850px) {
+  .music__latest .latest__song {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; }
+    .music__latest .latest__song .latest__cover {
+      width: 250px;
+      height: 250px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .music__latest .latest__song .latest__name {
+      font-family: Sequel 100 Wide;
+      font-style: normal;
+      font-weight: 60;
+      font-size: 48px;
+      line-height: 56px;
+      max-width: 440px;
+      margin: 16px 0 8px; }
+    .music__latest .latest__song .latest__info {
+      display: flex;
+      flex-direction: row; }
+      .music__latest .latest__song .latest__info .latest__label {
+        position: relative;
+        margin-right: 48px; }
+        .music__latest .latest__song .latest__info .latest__label::after {
+          content: "";
+          position: absolute;
+          border: 1px solid #000;
+          width: 24px;
+          top: 40%;
+          left: 106%; }
+    .music__latest .latest__song .latest__btn {
+      display: block;
+      width: fit-content;
+      text-decoration: none;
+      color: #000;
+      margin-top: 40px;
+      padding: 16px 32px;
+      border: 2px solid #000;
+      font-size: 14px;
+      font-weight: 600; } }
+
+@media screen and (max-width: 750px) {
+  .music__latest .latest__song {
+    flex-direction: column-reverse;
+    align-items: flex-end; }
+    .music__latest .latest__song .latest__cover {
+      width: 100%;
+      height: 80vw;
+      margin-bottom: 32px;
+      min-width: 200px;
+      min-height: 200px; }
+    .music__latest .latest__song .latest__name {
+      font-family: Sequel 100 Wide;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 34px;
+      line-height: 40px;
+      max-width: 440px;
+      margin: 16px 0 8px; }
+    .music__latest .latest__song .latest__btn {
+      display: block;
+      width: fit-content;
+      text-decoration: none;
+      color: #000;
+      margin-top: 40px;
+      padding: 16px 32px;
+      border: 2px solid #000;
+      font-size: 14px;
+      font-weight: 600; } }
+
+@media screen and (max-width: 450px) {
+  .music__latest {
+    padding: 80px 0; }
+    .music__latest .latest__song .latest__cover {
+      width: 100%;
+      height: 80vw;
+      margin-bottom: 32px;
+      min-width: 200px;
+      min-height: 200px; }
+    .music__latest .latest__song .latest__info .latest__label {
+      position: relative;
+      margin-right: 40px; }
+    .music__latest .latest__song .latest__info > * {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 12px; }
+    .music__latest .latest__song .latest__name {
+      font-family: Sequel, sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 34px;
+      line-height: 40px;
+      max-width: 440px;
+      margin: 8px 0 8px; }
+    .music__latest .latest__song .latest__author {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 12px; }
+    .music__latest .latest__song .latest__btn {
+      display: block;
+      width: fit-content;
+      text-decoration: none;
+      color: #000;
+      margin-top: 40px;
+      padding: 16px 32px;
+      border: 2px solid #000;
+      font-size: 14px;
+      font-weight: 600; } }
+
 @media screen and (max-width: 900px) {
   .music .music__year {
     flex-direction: column; } }
@@ -799,8 +1040,7 @@ video {
           margin: 16px 0 8px; }
         .music .music__year .song__information .song__btn {
           margin-top: 32px;
-          width: fit-content;
-          border-bottom: 1px solid white; } }
+          width: fit-content; } }
 
 /* --- Tour Header ---*/
 .intro {
