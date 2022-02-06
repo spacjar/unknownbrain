@@ -15,12 +15,16 @@
     }
     .music__year {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       flex-direction: row;
       flex: 1;
       &:not(:last-child) {
         margin-bottom: 40px;
+      }
+      .music__header {
+        color: #fff;
+        margin-bottom: 8px;
       }
       .music__popular {
         width: 100%;
@@ -34,10 +38,27 @@
           }
           &__header {
             color: white;
-            margin: 24px 0 8px;
+            margin: 8px 0;
           }
           &__artists {
             color: #a5a5a5;
+          }
+          &__layout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            .popular__btn {
+              width: fit-content;
+              position: relative;
+              text-decoration: none;
+              color: #fff;
+              padding: 16px 24px;
+              border: 0.5px solid #a5a5a5;
+              font-size: 12px;
+            }
           }
         }
       }
@@ -70,7 +91,7 @@
               position: absolute;
               border: 1px solid #fff;
               width: 16px;
-              top: 43%;
+              top: 48%;
               right: 0%;
               margin-left: 8px;
             }
@@ -79,12 +100,10 @@
               border: solid #fff;
               border-width: 0 2px 2px 0;
               display: inline-block;
-              padding: 3px;
+              padding: 2px;
               margin-left: 24px;
               transform: rotate(-45deg);
               -webkit-transform: rotate(-45deg);
-              top: 40%;
-              left: 120%;
             }
           }
           .ps {
@@ -129,6 +148,27 @@
   .music {
     .music__year {
       flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .music {
+    &__releases {
+      .music__year {
+        .music__popular {
+          .popular {
+            &__layout {
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              .popular__btn {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

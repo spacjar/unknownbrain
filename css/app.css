@@ -282,7 +282,7 @@ video {
   margin: 0 auto;
   padding: 0px 24px; }
   .container--narrow {
-    max-width: 1080px; }
+    max-width: 1104px; }
   .container--wide {
     max-width: 1264px; }
 
@@ -664,12 +664,15 @@ video {
       flex-direction: column; }
     .music__releases .music__year {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       flex-direction: row;
       flex: 1; }
       .music__releases .music__year:not(:last-child) {
         margin-bottom: 40px; }
+      .music__releases .music__year .music__header {
+        color: #fff;
+        margin-bottom: 8px; }
       .music__releases .music__year .music__popular {
         width: 100%;
         margin-bottom: 40px; }
@@ -680,9 +683,24 @@ video {
           background-size: cover; }
         .music__releases .music__year .music__popular .popular__header {
           color: white;
-          margin: 24px 0 8px; }
+          margin: 8px 0; }
         .music__releases .music__year .music__popular .popular__artists {
           color: #a5a5a5; }
+        .music__releases .music__year .music__popular .popular__layout {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: 24px; }
+          .music__releases .music__year .music__popular .popular__layout .popular__btn {
+            width: fit-content;
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            padding: 16px 24px;
+            border: 0.5px solid #a5a5a5;
+            font-size: 12px; }
       .music__releases .music__year .song {
         flex: 1;
         display: flex;
@@ -711,7 +729,7 @@ video {
               position: absolute;
               border: 1px solid #fff;
               width: 16px;
-              top: 43%;
+              top: 48%;
               right: 0%;
               margin-left: 8px; }
             .music__releases .music__year .song__information .song__btn::after {
@@ -719,12 +737,10 @@ video {
               border: solid #fff;
               border-width: 0 2px 2px 0;
               display: inline-block;
-              padding: 3px;
+              padding: 2px;
               margin-left: 24px;
               transform: rotate(-45deg);
-              -webkit-transform: rotate(-45deg);
-              top: 40%;
-              left: 120%; }
+              -webkit-transform: rotate(-45deg); }
           .music__releases .music__year .song__information .ps {
             line-height: 16px; }
         .music__releases .music__year .song__info {
@@ -754,6 +770,14 @@ video {
 @media screen and (max-width: 900px) {
   .music .music__year {
     flex-direction: column; } }
+
+@media screen and (max-width: 550px) {
+  .music__releases .music__year .music__popular .popular__layout {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .music__releases .music__year .music__popular .popular__layout .popular__btn {
+      margin-top: 16px; } }
 
 @media screen and (max-width: 500px) {
   .music .container {
