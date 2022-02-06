@@ -38,6 +38,12 @@
         overflow: hidden;
         white-space: nowrap;
         word-break: keep-all;
+        .title--outlined {
+          color: white;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 0.5px;
+          -webkit-text-stroke-color: white;
+        }
       }
     }
   }
