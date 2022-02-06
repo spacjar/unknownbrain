@@ -376,7 +376,7 @@ video {
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
-      flex: 2; }
+      flex: 1.8; }
       .footer .links__left .links__block {
         margin-right: 15px; }
     .footer .links__right {
@@ -672,7 +672,7 @@ video {
         margin-bottom: 40px; }
       .music__releases .music__year .music__popular {
         width: 100%;
-        margin-bottom: 88px; }
+        margin-bottom: 40px; }
         .music__releases .music__year .music__popular .popular__video {
           height: 594px;
           background-position: center;
@@ -682,7 +682,7 @@ video {
           color: white;
           margin: 24px 0 8px; }
         .music__releases .music__year .music__popular .popular__artists {
-          color: #A5A5A5; }
+          color: #a5a5a5; }
       .music__releases .music__year .song {
         flex: 1;
         display: flex;
@@ -702,15 +702,53 @@ video {
           flex-direction: column;
           padding: 16px 0 16px 16px; }
           .music__releases .music__year .song__information .song__btn {
+            width: fit-content;
+            position: relative;
             text-decoration: none;
             color: #fff; }
-        .music__releases .music__year .song__label {
-          color: #a5a5a5; }
+            .music__releases .music__year .song__information .song__btn::before {
+              content: "";
+              position: absolute;
+              border: 1px solid #fff;
+              width: 16px;
+              top: 43%;
+              right: 0%;
+              margin-left: 8px; }
+            .music__releases .music__year .song__information .song__btn::after {
+              content: "";
+              border: solid #fff;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              padding: 3px;
+              margin-left: 24px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              top: 40%;
+              left: 120%; }
+          .music__releases .music__year .song__information .ps {
+            line-height: 16px; }
+        .music__releases .music__year .song__info {
+          display: flex;
+          flex-direction: row; }
+          .music__releases .music__year .song__info .song__label,
+          .music__releases .music__year .song__info .song__date {
+            color: #a5a5a5; }
+          .music__releases .music__year .song__info .song__label {
+            position: relative;
+            margin-right: 40px; }
+            .music__releases .music__year .song__info .song__label::after {
+              content: "";
+              position: absolute;
+              border: 1px solid #a5a5a5;
+              width: 24px;
+              top: 40%;
+              left: 106%; }
         .music__releases .music__year .song__name {
           color: #fff;
-          margin: 24px 0 8px;
+          margin: 20px 0 8px;
           max-width: 280px; }
         .music__releases .music__year .song__author {
+          max-width: 240px;
           color: #a5a5a5; }
 
 @media screen and (max-width: 900px) {
