@@ -34,17 +34,19 @@
       top: 35%;
       color: white;
       &--row {
-        text-overflow: ellipsis;
-        overflow: hidden;
         white-space: nowrap;
         word-break: keep-all;
+        width: 100vw;
+        left: 0;
+        position: relative;
+        animation: marquee 15s linear infinite;
         .title--outlined {
           color: white;
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke-width: 0.5px;
           -webkit-text-stroke-color: white;
         }
-      }
+      }  
     }
   }
   padding: 160px 0 240px;
@@ -79,5 +81,15 @@
         margin-bottom: 24px;
       }
     }
+  }
+}
+
+@keyframes marquee {
+  0% {
+      transform: translate3d(0%, 0, 0)
+  }
+
+  100% {
+      transform: translate3d(-100%, 0, 0)
   }
 }
