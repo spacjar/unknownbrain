@@ -506,10 +506,12 @@ video {
       top: 35%;
       color: white; }
       .header__images .header__titles--row {
-        text-overflow: ellipsis;
-        overflow: hidden;
         white-space: nowrap;
-        word-break: keep-all; }
+        word-break: keep-all;
+        width: 100vw;
+        left: 0;
+        position: relative;
+        animation: marquee 15s linear infinite; }
         .header__images .header__titles--row .title--outlined {
           color: white;
           -webkit-text-fill-color: transparent;
@@ -537,6 +539,12 @@ video {
     margin-bottom: 104px; }
     .story .story__block p:not(:last-child) {
       margin-bottom: 24px; }
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0); }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
 
 .btn-dark {
   border: 3px solid #0F1116;
