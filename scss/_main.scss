@@ -61,6 +61,8 @@
     justify-content: space-between;
     ul {
       list-style: none;
+      position: sticky;
+      top: 0;
       li {
         font-family: Sequel, sans-serif;
         font-style: normal;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Sequel;
-  src: url(../Sequel.ttf); }
+  src: url(../assets/fonts/Sequel.ttf); }
 
 html,
 body,
@@ -526,7 +526,9 @@ video {
     flex-direction: row;
     justify-content: space-between; }
     .story .container ul {
-      list-style: none; }
+      list-style: none;
+      position: sticky;
+      top: 0; }
       .story .container ul li {
         font-family: Sequel, sans-serif;
         font-style: normal;
