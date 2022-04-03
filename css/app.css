@@ -1281,3 +1281,8 @@ i:hover {
           width: 100%; }
         .contact .contact__right .contact__form .input--full {
           width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .contact .container {
+    padding-left: 24px;
+    padding-right: 24px; } }
