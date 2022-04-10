@@ -570,6 +570,36 @@ video {
     display: block !important;
     margin-bottom: 16px; } }
 
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 160px 0 80px; }
+    .header__images {
+      position: relative;
+      display: block;
+      overflow: hidden; }
+      .header__images .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%; }
+      .header__images .header__image {
+        width: 90%;
+        height: 256px;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%); }
+      .header__images .header__image-wb {
+        margin-top: 16px;
+        background-image: url("../assets/images/WB.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .header__images .header__image-bb {
+        background-image: url("../assets/images/BB.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; } }
+
 .btn-dark {
   border: 3px solid #0F1116;
   background-color: transparent;
