@@ -69,8 +69,10 @@
     ul {
       list-style: none;
       position: sticky;
-      top: 56px;
+      top: 72px;
       height: min-content;
+      border-left: 4px solid white;
+      padding-left: 16px;
       li {
         font-family: Sequel, sans-serif;
         font-style: normal;
