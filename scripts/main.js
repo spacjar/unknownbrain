@@ -1,6 +1,8 @@
+let preloader = document.getElementById("preloader");
 window.addEventListener("load", () => {
+   preloader.style.display = "none";
+});
 
-})
 
 const BTN = document.getElementById("menu-btn");
 const HEADNAV = document.getElementById("hidden-header");

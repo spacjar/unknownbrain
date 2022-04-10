@@ -116,14 +116,60 @@ video {
     font-family: Sequel, sans-serif;
     color: white;
     -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;
   }
   &--white {
     font-family: Sequel, sans-serif;
     color: black;
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
+  }
+}
+
+.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  .circle {
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: loader 4s linear infinite;
+  }
+}
+
+@keyframes loader {
+  0% {
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+  }
+  25% {
+    border-width: 3px;
+    width: 70px;
+    height: 70px;
+  }
+  50% {
+    border-width: 4px;
+    width: 100px;
+    height: 100px;
+  }
+  75% {
+    border-width: 3px;
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
   }
 }
