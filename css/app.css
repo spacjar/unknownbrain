@@ -511,12 +511,17 @@ video {
         width: 100vw;
         left: 0;
         position: relative;
-        animation: marquee 15s linear infinite; }
+        animation: marquee 25s linear infinite; }
         .header__images .header__titles--row .title--outlined {
           color: white;
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke-width: 0.5px;
           -webkit-text-stroke-color: white; }
+        .header__images .header__titles--row span:hover {
+          cursor: pointer;
+          color: #fff !important; }
+      .header__images .header__titles--row:nth-child(2) {
+        animation-direction: reverse; }
 
 .story {
   background-color: #0a0a0a;
@@ -528,7 +533,8 @@ video {
     .story .container ul {
       list-style: none;
       position: sticky;
-      top: 0; }
+      top: 56px;
+      height: min-content; }
       .story .container ul li {
         font-family: Sequel, sans-serif;
         font-style: normal;
