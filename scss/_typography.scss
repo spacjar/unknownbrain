@@ -1,51 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @font-face {
-    font-family: Sequel;
-    src: url(../Sequel.ttf);
+  font-family: Sequel;
+  src: url(../assets/fonts/Sequel.ttf);
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    font-family: Sequel, sans-serif;
-    font-style: normal;
-    font-size: 100%;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
 }
 
-h1,h2 {
-    font-size: 30px;
-    font-weight: 900;
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  border: none;
+  text-transform: uppercase;
 }
 
-h3,h4 {
-    font-size: 25px;
-    font-weight: 700;
+h1 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 56px;
 }
 
-p, span, div, label {
-    font-family: circe, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 100;
+h2 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 56px;
 }
 
-a {
-    font-family: circe, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    color: $darker-light;
+h3 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 34px;
+  line-height: 40px;
 }
 
+h4 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h5 {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.exl-h {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 144px;
+  line-height: 64px;
+  &--bg {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f0f0f0;
+  }
+}
+
+.l-h {
+  font-family: Sequel, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 64px;
+}
+
+/* PARAGRAPHS */
+
+.ps {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  &--thin {
+    font-weight: 300;
+  }
+  &--regular {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.pm {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  &--thin {
+    font-weight: 300;
+  }
+  &--regular {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.pl {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  &--thin {
+    font-weight: 300;
+  }
+  &--regular {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+input,
+textarea {
+  font-family: "Archivo", sans-serif;
+}

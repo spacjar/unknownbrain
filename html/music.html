@@ -1,619 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Unknown Brain - Music library</title>
 
-    <meta name="theme-color" content="#0F1116">
-    <meta name="robots" content="index,follow"/>
-    <meta name="googlebot" content="index,follow"/>
-    <meta name="description" content="The official Unknown Brain Website - Browse through our music library.">
+    <meta name="theme-color" content="#0F1116" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta
+      name="description"
+      content="Browse through our music library. Checkout the new releases or all of our other songs."
+    />
     <!--<meta name="twitter:card" content=""/>-->
-    <meta name="twitter:site" content="@UnknownBrain_"/>
-    <meta name="twitter:creator" content="@UnknownBrain_"/>
-    <meta property="og:url" content="https://unknownbrain.com/music"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Unknown Brain - Music library"/>
-    <meta property="og:description" content="Browse through our music library."/>
+    <meta name="twitter:site" content="@UnknownBrain_" />
+    <meta name="twitter:creator" content="@UnknownBrain_" />
+    <meta property="og:url" content="https://unknownbrain.com/music" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Unknown Brain - Music library" />
+    <meta
+      property="og:description"
+      content="Browse through our music library. Checkout the new releases or all of our other songs."
+    />
     <!--<meta property="og:image" content=""/>-->
-    <meta property="og:image:alt" content="The official Unknown Brain Website - Music"/>
-    <meta property="og:site_name" content="The official Unknown Brain Website - Music"/>
-    <meta name="next-head-count" content="27"/>
+    <meta
+      property="og:image:alt"
+      content="The official Unknown Brain Website - Music"
+    />
+    <meta property="og:site_name" content="Unknown Brain - Music library" />
+    <meta name="next-head-count" content="27" />
 
-    <link rel="shortcut icon" href="../img/favicons/favicon-32.png">
+    <link rel="shortcut icon" href="../assets/images/favicons/favicon-32.png" />
 
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.typekit.net/xtv0hhc.css">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/xtv0hhc.css" />
     <script defer src="../scripts/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+      <div class="circle"></div>
+    </div>
     <header id="header">
-        <div class="menu">
-            <a href="index.html">
-                <svg class="icon-light" width="40" height="35" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                        <path id="p1" d="M5.19468 13.9607L7.63494 12.5518V4.42181L5.69492 3.30181V11.4368L5.19885 11.7234L1.94003 9.84095V1.13378L0.00354628 0.0156555H0V10.9616L5.19468 13.9607Z" fill="#FFFFFF"/>
-                        <path d="M16 0L8.3442 4.42096V13.1246L6.03494 14.458L7.97497 15.578L8.3442 15.3648V19.7872L10.2842 18.6672V14.2448L16 10.9447V9.25893L13.716 7.94013L16 6.61883V0ZM10.2842 12.0046V8.19901L13.5802 10.1017L10.2842 12.0046ZM10.2842 7.68522V5.53992L14.06 3.35562V5.49987L10.2842 7.68522Z" fill="#FFFFFF"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="16" height="19.7866" fill="#FFFFFF"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-            </a>
-            <div class="menu-btn" id="menu-btn">
-                <span id="menu-text" class="menu-text">MENU</span>
-                <div id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-            </div>
+      <div class="menu">
+        <a href="index.html">
+          <svg
+            class="icon-light"
+            width="40"
+            height="35"
+            viewBox="0 0 16 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                id="p1"
+                d="M5.19468 13.9607L7.63494 12.5518V4.42181L5.69492 3.30181V11.4368L5.19885 11.7234L1.94003 9.84095V1.13378L0.00354628 0.0156555H0V10.9616L5.19468 13.9607Z"
+                fill="#FFFFFF"
+              />
+              <path
+                d="M16 0L8.3442 4.42096V13.1246L6.03494 14.458L7.97497 15.578L8.3442 15.3648V19.7872L10.2842 18.6672V14.2448L16 10.9447V9.25893L13.716 7.94013L16 6.61883V0ZM10.2842 12.0046V8.19901L13.5802 10.1017L10.2842 12.0046ZM10.2842 7.68522V5.53992L14.06 3.35562V5.49987L10.2842 7.68522Z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="16" height="19.7866" fill="#FFFFFF" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <div class="menu-btn" id="menu-btn">
+          <span id="menu-text" class="menu-text">MENU</span>
+          <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <div class="hidden-header" id="hidden-header">
-            <nav class="sidenav" id="sidenav">
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="about.html">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a href="music.html">MUSIC</a>
-                    </li>
-                    <li>
-                        <a href="tour.html">TOUR</a>
-                    </li>
-                    <!--<li>
-                        <a href="#">Merchandise</a>
-                    </li>-->
-                    <li>
-                        <a href="contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-social-icons">
-                <a href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/unknown_brain/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.gg/GubW9Pdcd5" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://www.facebook.com/UnknownBrain" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/UnknownBrain_" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://music.apple.com/us/artist/unknown-brain/1177741866" target="_blank"><i class="fab fa-apple"></i></a>
-                <a href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I" target="_blank"><i class="fab fa-spotify"></i></a>
-                <a href="https://soundcloud.com/unknownbrain" target="_blank"><i class="fab fa-soundcloud"></i></a>
-            </div>
+      </div>
+      <div class="hidden-header" id="hidden-header">
+        <nav class="sidenav" id="sidenav">
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="music.html">MUSIC</a>
+            </li>
+            <li>
+              <a href="tour.html">SHOWS</a>
+            </li>
+            <li>
+              <a href="#">MASK 360</a>
+            </li>
+            <li>
+              <a href="#">SHOP</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-social-icons">
+          <a
+            href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/unknown_brain/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://discord.gg/GubW9Pdcd5" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <a href="https://www.facebook.com/UnknownBrain" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/UnknownBrain_" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://music.apple.com/us/artist/unknown-brain/1177741866"
+            target="_blank"
+            ><i class="fab fa-apple"></i
+          ></a>
+          <a
+            href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I"
+            target="_blank"
+            ><i class="fab fa-spotify"></i
+          ></a>
+          <a href="https://soundcloud.com/unknownbrain" target="_blank"
+            ><i class="fab fa-soundcloud"></i
+          ></a>
         </div>
+      </div>
     </header>
     <!--New Releases-->
-    <section class="newest-release">
-        <span class="text-bg">ROOFTOP</span>
-        <div class="container">
-            <div class="release-left">
-                <div class="top">
-                    <p class="label">2021 / Warner Music Group</p>
-                    <h2 class="song">ROOFTOP</h2>
-                    <p class="arists">Unknown Brain feat. iyazlive & shiahsings</p>
+    <section class="music">
+      <!-- Latest music -->
+      <div class="music__latest">
+        <h2 class="music__bg__title exl-h exl-h--bg">Latest Release</h2>
+        <div class="container container--narrow">
+          <div class="latest__song">
+            <div class="latest__information">
+              <div class="latest__label">
+                <div class="latest__info">
+                  <p class="latest__label pm pm--bold">Warner Music Group</p>
+                  <p class="latest__date pm pm--bold">11/11/2021</p>
                 </div>
-                <div class="bottom">
-                    <a href="https://lnk.to/UnknownBrain_RooftopAY" class="btn-dark">Listen Now</a>
-                </div>
+                <h4 class="latest__name">Let's drink bleach</h4>
+                <p class="latest__author pm pm--bold">
+                  Unknown Brain feat. Kyle Reynolds
+                </p>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="latest__btn ps">Listen now</a>
+              </div>
             </div>
-            <div class="release-right">
-                <img src="../img/cover/rooftop.jpg" alt="Rooftop">
-            </div>
+            <div class="latest__cover" style="background-image: url(../assets/images/cover/lets-drink-bleach.png);"></div>
+          </div>
         </div>
+      </div>
+      <!-- Music releases -->
+      <div class="music__releases">
+        <div class="container container--narrow">
+          <div class="music__year">
+            <h3 class="music__header">Most Popular</h3>
+            <div class="music__popular">
+              <div class="popular__video" style="background-image: url(../assets/images/cover/lets-drink-bleach-vid.jpeg);"></div>
+              <div class="popular__layout">
+                <div class="popular__info">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="popular__header">Let's Drink Bleach</h4>
+                  <p class="popular__artists ps">Unknown Brain feat. Kyle Reynolds</p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="popular__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div
+                class="song__cover"
+                style="
+                  background-image: url(../assets/images/cover/lets-drink-bleach.png);
+                "
+              ></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Let's drink bleach</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song__cover" style="
+                              background-image: url(../assets/images/cover/rooftop.jpg);
+                            "></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Rooftop</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song__cover" style="
+                              background-image: url(../assets/images/cover/lets-drink-bleach.png);
+                            "></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Let's drink bleach</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+          </div>
+          <div class="music__year">
+            <h3 class="music__header">Most Popular</h3>
+            <div class="music__popular">
+              <div class="popular__video" style="background-image: url(../assets/images/cover/lets-drink-bleach-vid.jpeg);"></div>
+              <div class="popular__layout">
+                <div class="popular__info">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="popular__header">Rooftop</h4>
+                  <p class="popular__artists ps">Unknown Brain feat. Kyle Reynolds</p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="popular__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song__cover" style="
+                            background-image: url(../assets/images/cover/lets-drink-bleach.png);
+                          "></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Let's drink bleach</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song__cover" style="
+                                        background-image: url(../assets/images/cover/rooftop.jpg);
+                                      "></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Rooftop</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song">
+              <div class="song__cover" style="
+                                        background-image: url(../assets/images/cover/lets-drink-bleach.png);
+                                      "></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__date ps">11/11/2021</p>
+                  </div>
+                  <h4 class="song__name">Let's drink bleach</h4>
+                  <p class="song__author ps">
+                    Unknown Brain feat. Kyle Reynolds
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!--<section class="music">
-        <div class="releases-header">
-            <div class="container">
-                <h3>EXPLORE THE UNKNOWN</h3>
-                <ul>
-                    <li>All</li>
-                    <li>2021</li>
-                    <li>2020</li>
-                    <li>2019</li>
-                    <li>2018</li>
-                    <li>2017</li>
-                    <li>2016</li>
-                </ul>
-            </div>
+    <footer class="footer">
+      <div class="container container--wide">
+        <div class="newsletter">
+          <h3 class="newsletter__heading">
+            <span class="newsletter__heading--border">Join the </span>#UBSQUAD
+          </h3>
+          <form action="" class="newsletter__form">
+            <input type="email" class="newsletter__email" placeholder="EMAIL ADDRESS" />
+            <input type="submit" value="SUBMIT" />
+          </form>
         </div>
-    </section>-->
-        <div class="releases">
-            <div class="card-container">
-                <div class="year">
-                    <div class="container">
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/faceless.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">Faceless</h3>
-                                    <p class="musicians">Unknown Brain feat. Marvin Divine & Bri Tolani</p>
-                                </div>
-                                <a href="https://ncs.lnk.to/Faceless" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/hollywoodperfect.png);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">Hollywood Perfect</h3>
-                                    <p class="musicians">Unknown Brain feat. NotEvenTanner</p>
-                                </div>
-                                    <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/jungleoflove.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">Jungle of Love</h3>
-                                    <p class="musicians">Unknown Brain feat. Glaceo</p>
-                                </div>
-                                    <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/phenomenon.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">Phenomenon</h3>
-                                    <p class="musicians">Unknown Brain & Hoober feat. Dax & VinDon</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/imsorrymom.png);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">I'm Sorry Mom</h3>
-                                    <p class="musicians">Unknown Brain & Kyle Reynolds</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/dead.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">DEAD</h3>
-                                    <p class="musicians">Unknown Brain feat. KAZHI</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/dotm.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / NCS</p>
-                                    <h3 class="song">Dancing On The Moon</h3>
-                                    <p class="musicians">Unknown Brain feat. Luke Burr</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/slow.jpeg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / Spinnin' Records</p>
-                                    <h3 class="song">Slow</h3>
-                                    <p class="musicians">Unknown Brain & Steve Andreas feat. Laurell & Haj</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/takeit.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2020 / Future Generation</p>
-                                    <h3 class="song">Take It</h3>
-                                    <p class="musicians">Unknown Brain & ThatBehavior feat. RIELL & J.O.Y.</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="year">
-                    <div class="container">
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/saygoodbye.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / NCS</p>
-                                    <h3 class="song">Say Goodbye</h3>
-                                    <p class="musicians">Unknown Brain feat. Marvin Divine</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/wargame.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / ENTER RECORDS</p>
-                                    <h3 class="song">War Dream</h3>
-                                    <p class="musicians">Unknown Brain</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/beginagain.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / FUTURE GENERATION</p>
-                                    <h3 class="song">Begin Again</h3>
-                                    <p class="musicians">Unknown Brain & Hoober feat. Riell</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/warzone.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / NCS</p>
-                                    <h3 class="song">War Zone</h3>
-                                    <p class="musicians">Unknown Brain feat. M.I.M.E.</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/wargame.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / Trap City</p>
-                                    <h3 class="song">War Game</h3>
-                                    <p class="musicians">Unknown Brain feat. Evoke</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/perfect10vip.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2019 / NCS</p>
-                                    <h3 class="song">Perfect 10 VIP</h3>
-                                    <p class="musicians">Unknown Brain & Heather Sommer (Unknown Brain & RudeLies VIP)</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="year">
-                    <div class="container">
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/waiting.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / NCS</p>
-                                    <h3 class="song">Waiting</h3>
-                                    <p class="musicians">Unknown Brain feat. Lox Chatterbox, BLVKSTN & Salvo</p>
-                                </div>
-                                    <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/firedup.png);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / Trap Nation</p>
-                                    <h3 class="song">Fired Up</h3>
-                                    <p class="musicians">Unknown Brain feat. Taheran</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/control.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / NCS</p>
-                                    <h3 class="song">Control</h3>
-                                    <p class="musicians">Unknown Brain x Rival feat. Jex</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/staythesame.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / Trap City</p>
-                                    <h3 class="song">Stay The Same</h3>
-                                    <p class="musicians">Unknown Brain & Rival feat. Veronica Bravo</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/perfect10.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / NCS</p>
-                                    <h3 class="song">Perfect 10</h3>
-                                    <p class="musicians">Unknown Brain feat. Heather Sommer</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/circles.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / Trap Nation</p>
-                                    <h3 class="song">Circles</h3>
-                                    <p class="musicians">Unknown Brain & Laura Brehm</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/lost.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / Trap Nation</p>
-                                    <h3 class="song">Lost</h3>
-                                    <p class="musicians">Sinner's Heist & Unknown Brain</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/distortion.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2018 / Trap Nation</p>
-                                    <h3 class="song">Distortion</h3>
-                                    <p class="musicians">Unknown Brain & Rfen</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="year">
-                    <div class="container">
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/holdingyou.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Holding You</h3>
-                                    <p class="musicians">Unknown Brain & Spce CadeX feat. Max Landry</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/twistedreality.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Twisted Reality</h3>
-                                    <p class="musicians">Unknown Brain & Anna Yvette</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/roots.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Roots</h3>
-                                    <p class="musicians">Unknown Brain feat. Attxla</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/forgiveme.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / Chill Planet</p>
-                                    <h3 class="song">Forgive Me</h3>
-                                    <p class="musicians">Unknown Brain feat. Harley Bird</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/kuyenda.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Kuyenda</h3>
-                                    <p class="musicians">Lennart Schroot & Unknown Brain feat. Sru</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/lookingfornothing.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / Knight Vision</p>
-                                    <h3 class="song">Looking For Nothing</h3>
-                                    <p class="musicians">Unknown Brain feat. Avril Amber</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/inspiration.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Inspiration</h3>
-                                    <p class="musicians">Unknown Brain feat. Aviella</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/wassup.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / Tribal Trap</p>
-                                    <h3 class="song">Wassup</h3>
-                                    <p class="musicians">Unknown Brain & Varsity Dropouts</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/matafaka.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">MATAFAKA</h3>
-                                    <p class="musicians">Unknown Brain feat. Marvin Divine</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/perseus.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Perseus</h3>
-                                    <p class="musicians">Unknown Brain feat. Chris Linton</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/saviour.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2017 / NCS</p>
-                                    <h3 class="song">Saviour</h3>
-                                    <p class="musicians">Unknown Brain feat. Chris Linton</p>
-                                </div>
-                                                                <a href="" target="_blank" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="year">
-                    <div class="container">
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/superhero.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2016 / NCS</p>
-                                    <h3 class="song">Superhero</h3>
-                                    <p class="musicians">Unknown Brain feat. Chris Linton</p>
-                                </div>
-                                <a href="http://ncs.io/superhero" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cover-img" style="background-image: url(../img/cover/seperateways.jpg);"></div>
-                            <div class="card-text">
-                                <div class="card-text-top">
-                                    <p class="label">2016 / Chill Planet</p>
-                                    <h3 class="song">Separate Ways</h3>
-                                    <p class="musicians">Unknown Brain</p>
-                                </div>
-                                <a href="#" class="link-underline">listen now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="links">
+          <div class="links__left">
+            <div class="links__block">
+              <h5 class="links__header">Explore</h5>
+              <ul class="links__list list--unmarked">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Music</a>
+                </li>
+                <li>
+                  <a href="#">Mask 360</a>
+                </li>
+              </ul>
             </div>
+            <div class="links__block">
+              <h5 class="links__header">Shows</h5>
+              <ul class="links__list list--unmarked">
+                <li>
+                  <a href="#">Tours and concerts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links__block">
+              <h5 class="links__header">Get In Touch</h5>
+              <ul class="links__list list--unmarked">
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">E-mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="links__right">
+            <div class="links__block">
+              <h5 class="links__header">Follow us</h5>
+              <div class="links__social">
+                <a href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng" target="_blank"><i
+                    class="fab fa-youtube fa-lg"></i></a>
+                <a href="https://www.instagram.com/unknown_brain/" target="_blank"><i
+                    class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://discord.gg/GubW9Pdcd5" target="_blank"><i class="fab fa-discord fa-lg"></i></a>
+                <a href="https://www.facebook.com/UnknownBrain" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://twitter.com/UnknownBrain_" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://music.apple.com/us/artist/unknown-brain/1177741866" target="_blank"><i
+                    class="fab fa-apple fa-lg"></i></a>
+                <a href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I" target="_blank"><i
+                    class="fab fa-spotify fa-lg"></i></a>
+                <a href="https://soundcloud.com/unknownbrain" target="_blank"><i class="fab fa-soundcloud fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <footer>
-            <div class="footer-parts">
-                <div class="newsletter">
-                    <h2>JOIN THE #UBSQUAD</h2>
-                    <p>Subscribe to our newsletter and stay updated.</p>
-                    <!--<form action="">
-                        <input type="text" placeholder="Email address">
-                        <input type="submit" value="Subscribe">
-                    </form>-->
-                </div>
-                <div class="lower-footer">
-                    <div class="container">
-                        <div class="footer-links">
-                            <div class="footer-links-layout">
-                                <div class="footer-links-left">
-                                    <div class="footer-item-left">
-                                        <h3>Explore</h3>
-                                        <ul>
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About us</a></li>
-                                            <li><a href="music.html">Music</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="footer-item-left">
-                                        <h3>Tours</h3>
-                                        <ul>
-                                            <li><a href="tour.html">Tours and concerts</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="footer-item-left">
-                                        <h3>Get in touch</h3>
-                                        <ul>
-                                            <li><a href="contact.html">Contact us</a></li>
-                                            <li><a href="mailto: contact@unknownbrain.com">Email</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="footer-item-left">
-                                        <h3>Legal</h3>
-                                        <ul>
-                                            <!--<li><a href="">Privacy Policy</a></li>-->
-                                            <li><a href="impressum.html">Imprint</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="footer-links-right">
-                                    <div class="footer-item-right">
-                                        <h3>Follow us</h3>
-                                        <div class="footer-social-icons">
-                                            <a href="https://www.youtube.com/channel/UCBNkoUc0kf7a-x1RteoNHng" target="_blank"><i class="fab fa-youtube"></i></a>
-                                            <a href="https://www.instagram.com/unknown_brain/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                            <a href="https://discord.gg/GubW9Pdcd5" target="_blank"><i class="fab fa-discord"></i></a>
-                                            <a href="https://www.facebook.com/UnknownBrain" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="https://twitter.com/UnknownBrain_" target="_blank"><i class="fab fa-twitter"></i></a>
-                                            <a href="https://music.apple.com/us/artist/unknown-brain/1177741866" target="_blank"><i class="fab fa-apple"></i></a>
-                                            <a href="https://open.spotify.com/artist/0okpgBQamDqOZazBeH0J3I" target="_blank"><i class="fab fa-spotify"></i></a>
-                                            <a href="https://soundcloud.com/unknownbrain" target="_blank"><i class="fab fa-soundcloud"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="copy">
-                            <p>&copy; 2021 Unknown Brain, <span>All rights reserved.</span></p>
-                            <p>Created with &#10084; by <a>Silenthium</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-</body>
+        <div class="links-end">
+          <p>© 2022 Unknown Brain, All Rights Reserved.</p>
+          <ul class="links-end__list list--unmarked">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Impressum</a>
+            </li>
+            <li>
+              <a href="#">Credit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
