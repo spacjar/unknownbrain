@@ -562,6 +562,56 @@ video {
       .header__images .header__titles--row:nth-child(2) {
         animation-direction: reverse; }
 
+.fuckit {
+  padding-bottom: 160px;
+  background-color: #0a0a0a; }
+  .fuckit .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .fuckit .container .item {
+      position: relative;
+      color: white; }
+      .fuckit .container .item:not(:last-child) {
+        margin-bottom: 160px; }
+      .fuckit .container .item .item__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right; }
+        .fuckit .container .item .item__box p {
+          max-width: 500px;
+          margin-right: 56px; }
+      .fuckit .container .item h3 {
+        text-transform: uppercase;
+        text-align: right;
+        position: absolute;
+        max-width: 1000px;
+        color: white;
+        bottom: -24px;
+        right: 16px;
+        font-size: 48px !important;
+        line-height: 48px !important; }
+    .fuckit .container .item:nth-child(2) .item__box {
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: left; }
+      .fuckit .container .item:nth-child(2) .item__box p {
+        max-width: 500px;
+        margin-left: 56px; }
+    .fuckit .container .item:nth-child(2) h3 {
+      position: absolute;
+      text-align: left;
+      color: white;
+      bottom: -24px;
+      left: 16px; }
+  .fuckit__transition {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+
 .story {
   background-color: #0a0a0a;
   color: white; }

@@ -60,6 +60,69 @@
   padding: 160px 0 240px;
 }
 
+.fuckit {
+  padding-bottom: 160px;
+  background-color: #0a0a0a;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .item {
+      position: relative;
+      color: white;
+      &:not(:last-child) {
+        margin-bottom: 160px;
+      }
+      .item__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        p {
+          max-width: 500px;
+          margin-right: 56px;
+        }
+      }
+      h3 {
+        text-transform: uppercase;
+        text-align: right;
+        position: absolute;
+        max-width: 1000px;
+        color: white;
+        bottom: -24px;
+        right: 16px;
+        font-size: 48px !important;
+        line-height: 48px !important;
+      }
+    }
+    .item:nth-child(2) {
+      .item__box {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        p {
+          max-width: 500px;
+          margin-left: 56px;
+        }
+      }
+      h3 {
+        position: absolute;
+        text-align: left;
+        color: white;
+        bottom: -24px;
+        left: 16px;
+      }
+    }
+  }
+  &__transition {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
+
 .story {
   background-color: #0a0a0a;
   color: white;
