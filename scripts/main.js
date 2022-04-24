@@ -1,9 +1,25 @@
+// Preloader
 let preloader = document.getElementById("preloader");
 window.addEventListener("load", () => {
    preloader.style.display = "none";
 });
 
+// Fuck it section - transformation
+let fuckIt = document.getElementById("fuckit");
+let fuckItImg = document.getElementById("fuckItImg");
+let i = 0;
 
+window.onscroll = () => {
+    console.log("Test");
+};
+
+fuckIt.addEventListener("click", () => {
+    //fuckItImg.style.transform = "scale(10px)";
+    //document.getElementById("fuckItImg").style.color = "red";
+    console.log("Scroll");
+});
+
+// Menu
 const BTN = document.getElementById("menu-btn");
 const HEADNAV = document.getElementById("hidden-header");
 const hamburger = document.getElementById("hamburger");
