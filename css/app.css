@@ -615,6 +615,8 @@ footer {
         font-size: 48px !important;
         line-height: 48px !important;
         animation: opaMove 1s linear; }
+        .fuckit .container .item h3 .view--mobile {
+          display: none; }
     .fuckit .container .item:nth-child(2) .item__box {
       display: flex;
       flex-direction: row-reverse;
@@ -626,8 +628,10 @@ footer {
       position: absolute;
       text-align: left;
       color: white;
-      bottom: -24px;
+      bottom: -32px !important;
       left: 16px; }
+    .fuckit .container .item:nth-child(3) h3 {
+      bottom: -32px !important; }
   .fuckit__transition {
     height: 100vh;
     display: flex;
@@ -637,7 +641,8 @@ footer {
 
 .story {
   background-color: #0a0a0a;
-  color: white; }
+  color: white;
+  overflow: hidden; }
   .story .container {
     display: flex;
     flex-direction: row;
@@ -681,6 +686,50 @@ footer {
     transform: translate3d(0%, 0, 0); }
   100% {
     transform: translate3d(-100%, 0, 0); } }
+
+@media screen and (max-width: 1080px) {
+  .fuckit {
+    padding-bottom: 160px;
+    background-color: #0a0a0a; }
+    .fuckit .container .item {
+      color: white; }
+      .fuckit .container .item:not(:last-child) {
+        margin-bottom: 160px; }
+      .fuckit .container .item__box {
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0px;
+        flex-direction: column-reverse !important; }
+        .fuckit .container .item__box p {
+          max-width: 100% !important;
+          margin-right: 0px !important; }
+        .fuckit .container .item__box img {
+          width: 100%; }
+      .fuckit .container .item h3 {
+        position: static !important;
+        text-transform: uppercase;
+        text-align: left;
+        max-width: 1000px;
+        margin: 16px 0 8px; }
+        .fuckit .container .item h3.view--mobile {
+          display: block; }
+        .fuckit .container .item h3.view--desktop {
+          display: none; }
+    .fuckit .container .item:nth-child(2) .item__box {
+      flex-direction: column-reverse; }
+      .fuckit .container .item:nth-child(2) .item__box p {
+        max-width: 100%;
+        margin-left: 0; }
+    .fuckit .container .item:nth-child(3) h3 {
+      bottom: 0; }
+    .fuckit__transition {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; } }
 
 @media screen and (max-width: 850px) {
   .story .container {
@@ -1039,7 +1088,8 @@ i:hover {
         flex: 1;
         display: flex;
         flex-direction: row;
-        padding: 20px 0; }
+        padding: 20px 0;
+        animation: opaMove 1s linear; }
         .music__releases .music__year .song__cover {
           min-width: 200px;
           min-height: 200px;
@@ -1371,7 +1421,7 @@ i:hover {
     background-size: 100%;
     top: 160px;
     left: 0px;
-    width: 40vw;
+    width: 38vw;
     height: 360px;
     z-index: 1; }
   .contact::after {
