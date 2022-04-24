@@ -137,13 +137,12 @@
 .story {
   background-color: #0a0a0a;
   color: white;
-  overflow: hidden;
+  overflow-y: hidden;
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    // overflow-y: hidden;
     &::after {
       content: "";
       position: absolute;
@@ -207,7 +206,7 @@
       .item {
         color: white;
         &:not(:last-child) {
-          margin-bottom: 160px;
+          margin-bottom: 80px;
         }
         &__box {
           display: flex;
@@ -283,6 +282,16 @@
     margin-bottom: 16px;
    }
  }
+ .fuckit {
+  .container {
+    .item {
+      h3 {
+        font-size: 32px !important;
+        line-height: 32px !important;
+      }
+    }
+  }
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -318,5 +327,8 @@
       }
     }
     padding: 160px 0 80px;
+  }
+  .fuckit {
+    padding-top: 80px;
   }
 }

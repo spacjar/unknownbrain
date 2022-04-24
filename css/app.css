@@ -642,7 +642,7 @@ footer {
 .story {
   background-color: #0a0a0a;
   color: white;
-  overflow: hidden; }
+  overflow-y: hidden; }
   .story .container {
     display: flex;
     flex-direction: row;
@@ -694,7 +694,7 @@ footer {
     .fuckit .container .item {
       color: white; }
       .fuckit .container .item:not(:last-child) {
-        margin-bottom: 160px; }
+        margin-bottom: 80px; }
       .fuckit .container .item__box {
         display: flex;
         justify-content: flex-start !important;
@@ -743,7 +743,10 @@ footer {
     display: none; }
   .story__header--mobile {
     display: block !important;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .fuckit .container .item h3 {
+    font-size: 32px !important;
+    line-height: 32px !important; } }
 
 @media screen and (max-width: 600px) {
   .header {
@@ -773,7 +776,9 @@ footer {
         background-image: url("../assets/images/BB.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; } }
+        background-size: cover; }
+  .fuckit {
+    padding-top: 80px; } }
 
 .btn-dark {
   border: 3px solid #0F1116;
