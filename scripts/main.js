@@ -9,15 +9,15 @@ let fuckIt = document.getElementById("fuckit");
 let fuckItImg = document.getElementById("fuckItImg");
 let i = 0;
 
-window.onscroll = () => {
-    console.log("Test");
-};
+// window.onscroll = () => {
+//     console.log("Test");
+// };
 
-fuckIt.addEventListener("click", () => {
-    //fuckItImg.style.transform = "scale(10px)";
-    //document.getElementById("fuckItImg").style.color = "red";
-    console.log("Scroll");
-});
+// fuckIt.addEventListener("click", () => {
+//     //fuckItImg.style.transform = "scale(10px)";
+//     //document.getElementById("fuckItImg").style.color = "red";
+//     console.log("Scroll");
+// });
 
 // Menu
 const BTN = document.getElementById("menu-btn");
