@@ -68,6 +68,7 @@
     justify-content: center;
     flex-wrap: wrap;
     .item {
+      animation: opaMove 2s linear;
       position: relative;
       color: white;
       &:not(:last-child) {
@@ -81,6 +82,7 @@
         p {
           max-width: 500px;
           margin-right: 56px;
+          animation: opaMove 3s linear;
         }
       }
       h3 {
@@ -93,6 +95,7 @@
         right: 16px;
         font-size: 48px !important;
         line-height: 48px !important;
+        animation: opaMove 1s linear;
       }
     }
     .item:nth-child(2) {
