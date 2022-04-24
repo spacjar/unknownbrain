@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website#readme",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1"
   }
 }
