@@ -642,7 +642,7 @@ footer {
 .story {
   background-color: #0a0a0a;
   color: white;
-  overflow-y: hidden; }
+  overflow-x: hidden; }
   .story .container {
     display: flex;
     flex-direction: row;
