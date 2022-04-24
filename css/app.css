@@ -913,7 +913,21 @@ i:hover {
     width: 80vw; } }
 
 .music {
-  background-color: #0a0a0a; }
+  background-color: #0a0a0a;
+  overflow: hidden; }
+  .music::before {
+    position: absolute;
+    content: "";
+    background-image: url("../assets/images/pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -24px;
+    left: 0px;
+    width: 40vw;
+    height: 100%;
+    z-index: 1;
+    opacity: 56%; }
   .music__latest {
     padding: 200px 0;
     background-color: #fff;
@@ -997,6 +1011,7 @@ i:hover {
         margin-bottom: 40px; }
         .music__releases .music__year .music__popular .popular__video {
           height: 594px;
+          width: 100%;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover; }
