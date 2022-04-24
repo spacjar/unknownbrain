@@ -1,4 +1,4 @@
-.footer {
+footer {
   background-color: black;
   color: white;
   padding: 64px 0;
@@ -40,6 +40,8 @@
         color: white;
         padding: 12px;
         margin-top: 20px;
+        font-size: 12px;
+        border-right: none;
         &::placeholder {
           font-family: Archivo;
           font-style: normal;
@@ -57,18 +59,20 @@
       input[type="submit"] {
         font-family: Archivo;
         font-style: normal;
-        padding: 13.5px;
+        padding: 12px;
         flex: 0.2;
         max-width: 128px;
         cursor: pointer;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 12px;
+        //line-height: 12px;
+        border: 1px solid #4d4d4d;
       }
       input[type="submit"]:hover {
         background-color: #f4f4f4;
         color: black;
+        font-size: 12px;
       }
     }
   }
