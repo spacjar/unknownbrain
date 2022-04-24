@@ -96,6 +96,9 @@
         font-size: 48px !important;
         line-height: 48px !important;
         animation: opaMove 1s linear;
+        .view--mobile {
+          display: none;
+        }
       }
     }
     .item:nth-child(2) {
@@ -112,8 +115,13 @@
         position: absolute;
         text-align: left;
         color: white;
-        bottom: -24px;
+        bottom: -32px !important;
         left: 16px;
+      }
+    }
+    .item:nth-child(3) {
+      h3 {
+        bottom: -32px !important;
       }
     }
   }
@@ -129,6 +137,7 @@
 .story {
   background-color: #0a0a0a;
   color: white;
+  overflow: hidden;
   .container {
     display: flex;
     flex-direction: row;
@@ -187,6 +196,70 @@
 
   100% {
       transform: translate3d(-100%, 0, 0)
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .fuckit {
+    padding-bottom: 160px;
+    background-color: #0a0a0a;
+    .container {
+      .item {
+        color: white;
+        &:not(:last-child) {
+          margin-bottom: 160px;
+        }
+        &__box {
+          display: flex;
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+          text-align: left !important;
+          margin: 0px;
+          flex-direction: column-reverse !important;
+          p {
+            max-width: 100% !important;
+            margin-right: 0px !important;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        h3 {
+          position: static !important;
+          text-transform: uppercase;
+          text-align: left;
+          max-width: 1000px;
+          margin: 16px 0 8px;
+          &.view--mobile {
+            display: block;
+          }
+          &.view--desktop {
+            display: none;
+          }
+        }
+      }
+      .item:nth-child(2) {
+        .item__box {
+          flex-direction: column-reverse;
+          p {
+            max-width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+      .item:nth-child(3) {
+        h3 {
+          bottom: 0;
+        }
+      }
+    }
+    &__transition {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
   }
 }
 
