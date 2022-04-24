@@ -974,10 +974,10 @@ i:hover {
           .music__latest .latest__song .latest__info .latest__label::after {
             content: "";
             position: absolute;
-            border: 1px solid #000;
+            border-bottom: 2px solid #000;
             width: 24px;
             top: 40%;
-            left: 106%; }
+            right: -36px; }
       .music__latest .latest__song .latest__btn {
         display: block;
         width: fit-content;
@@ -1033,7 +1033,7 @@ i:hover {
             text-decoration: none;
             color: #fff;
             padding: 16px 24px;
-            border: 0.5px solid #a5a5a5;
+            border: 1px solid #a5a5a5;
             font-size: 12px; }
       .music__releases .music__year .song {
         flex: 1;
@@ -1061,9 +1061,9 @@ i:hover {
             .music__releases .music__year .song__information .song__btn::before {
               content: "";
               position: absolute;
-              border: 1px solid #fff;
+              border-bottom: 2px solid #fff;
               width: 16px;
-              top: 48%;
+              top: 51.5%;
               right: 0%;
               margin-left: 8px; }
             .music__releases .music__year .song__information .song__btn::after {
@@ -1089,10 +1089,10 @@ i:hover {
             .music__releases .music__year .song__info .song__label::after {
               content: "";
               position: absolute;
-              border: 1px solid #a5a5a5;
+              border-bottom: 2px solid #a5a5a5;
               width: 24px;
               top: 40%;
-              left: 106%; }
+              right: -32px; }
         .music__releases .music__year .song__name {
           color: #fff;
           margin: 20px 0 8px;
@@ -1148,10 +1148,8 @@ i:hover {
           .music__latest .latest__song .latest__info .latest__label::after {
             content: "";
             position: absolute;
-            border: 1px solid #000;
             width: 24px;
-            top: 40%;
-            left: 106%; }
+            top: 40%; }
       .music__latest .latest__song .latest__btn {
         display: block;
         width: fit-content;
@@ -1159,7 +1157,6 @@ i:hover {
         color: #000;
         margin-top: 40px;
         padding: 16px 32px;
-        border: 2px solid #000;
         font-size: 14px;
         font-weight: 600; } }
 
@@ -1194,10 +1191,8 @@ i:hover {
         .music__latest .latest__song .latest__info .latest__label::after {
           content: "";
           position: absolute;
-          border: 1px solid #000;
           width: 24px;
-          top: 40%;
-          left: 106%; }
+          top: 40%; }
     .music__latest .latest__song .latest__btn {
       display: block;
       width: fit-content;
@@ -1205,7 +1200,6 @@ i:hover {
       color: #000;
       margin-top: 40px;
       padding: 16px 32px;
-      border: 2px solid #000;
       font-size: 14px;
       font-weight: 600; } }
 
@@ -1234,7 +1228,6 @@ i:hover {
       color: #000;
       margin-top: 40px;
       padding: 16px 32px;
-      border: 2px solid #000;
       font-size: 14px;
       font-weight: 600; } }
 
@@ -1275,7 +1268,6 @@ i:hover {
       color: #000;
       margin-top: 40px;
       padding: 16px 32px;
-      border: 2px solid #000;
       font-size: 14px;
       font-weight: 600; } }
 

@@ -65,10 +65,10 @@
             &::after {
               content: "";
               position: absolute;
-              border: 1px solid #000;
+              border-bottom: 2px solid #000;
               width: 24px;
               top: 40%;
-              left: 106%;
+              right: -36px;
             }
           }
         }
@@ -140,7 +140,7 @@
               text-decoration: none;
               color: #fff;
               padding: 16px 24px;
-              border: 0.5px solid #a5a5a5;
+              border: 1px solid #a5a5a5;
               font-size: 12px;
             }
           }
@@ -173,9 +173,10 @@
             &::before {
               content: "";
               position: absolute;
-              border: 1px solid #fff;
+              border-bottom: 2px solid #fff;
+              //border: 1px solid #fff;
               width: 16px;
-              top: 48%;
+              top: 51.5%;
               right: 0%;
               margin-left: 8px;
             }
@@ -207,10 +208,10 @@
             &::after {
               content: "";
               position: absolute;
-              border: 1px solid #a5a5a5;
+              border-bottom: 2px solid #a5a5a5;
               width: 24px;
               top: 40%;
-              left: 106%;
+              right: -32px;
             }
           }
         }
@@ -280,10 +281,8 @@
               &::after {
                 content: "";
                 position: absolute;
-                border: 1px solid #000;
                 width: 24px;
                 top: 40%;
-                left: 106%;
               }
             }
           }
@@ -296,7 +295,6 @@
             color: #000;
             margin-top: 40px;
             padding: 16px 32px;
-            border: 2px solid #000;
             font-size: 14px;
             font-weight: 600;
           }
@@ -342,10 +340,8 @@
               &::after {
                 content: "";
                 position: absolute;
-                border: 1px solid #000;
                 width: 24px;
                 top: 40%;
-                left: 106%;
               }
             }
           }
@@ -358,7 +354,6 @@
             color: #000;
             margin-top: 40px;
             padding: 16px 32px;
-            border: 2px solid #000;
             font-size: 14px;
             font-weight: 600;
           }
@@ -398,7 +393,6 @@
             color: #000;
             margin-top: 40px;
             padding: 16px 32px;
-            border: 2px solid #000;
             font-size: 14px;
             font-weight: 600;
           }
@@ -455,7 +449,6 @@
             color: #000;
             margin-top: 40px;
             padding: 16px 32px;
-            border: 2px solid #000;
             font-size: 14px;
             font-weight: 600;
           }
