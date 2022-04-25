@@ -146,6 +146,13 @@ video {
   }
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
 @keyframes opaMove {
   0% {
     transform: translateY(5px);
