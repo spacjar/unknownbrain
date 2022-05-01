@@ -311,7 +311,7 @@ video {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black; }
 
-.preloader {
+/*.preloader {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -319,13 +319,20 @@ video {
   width: 100vw;
   height: 100vh;
   background-color: black;
-  z-index: 9999; }
-  .preloader .circle {
+  z-index: 9999;
+  .circle {
     border: 1px solid white;
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    animation: loader 4s linear infinite; }
+    animation: loader 4s linear infinite;
+  }
+}*/
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000; }
 
 @keyframes opaMove {
   0% {
@@ -365,6 +372,61 @@ video {
     border-width: 2px;
     width: 50px;
     height: 50px; } }
+
+/*.transition--fade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  //animation: transitionOut 2s linear;
+  opacity: 0;
+  transition: 5s;
+}
+
+html.is-rendering .transition--fade {
+  opacity: 1;
+  display: block;
+}*/
+@keyframes pageTransitionOut {
+  0% {
+    opacity: 0;
+    background-color: black;
+    display: block; }
+  25% {
+    opacity: 0.25;
+    background-color: black;
+    display: block; }
+  50% {
+    opacity: 0.5;
+    background-color: black;
+    display: block; }
+  75% {
+    opacity: 0.75;
+    background-color: black;
+    display: block; }
+  100% {
+    opacity: 1;
+    background-color: black;
+    display: block; } }
+
+@keyframes pageTransitionIn {
+  0% {
+    opacity: 1;
+    background-color: black; }
+  25% {
+    opacity: 0.75;
+    background-color: black; }
+  50% {
+    opacity: 0.5;
+    background-color: black; }
+  75% {
+    opacity: 0.25;
+    background-color: black; }
+  100% {
+    opacity: 0;
+    background-color: black;
+    display: none; } }
 
 footer {
   background-color: black;
@@ -590,7 +652,6 @@ footer {
     justify-content: center;
     flex-wrap: wrap; }
     .fuckit .container .item {
-      animation: opaMove 2s linear;
       position: relative;
       color: white; }
       .fuckit .container .item:not(:last-child) {
@@ -602,8 +663,7 @@ footer {
         text-align: right; }
         .fuckit .container .item .item__box p {
           max-width: 500px;
-          margin-right: 56px;
-          animation: opaMove 3s linear; }
+          margin-right: 56px; }
       .fuckit .container .item h3 {
         text-transform: uppercase;
         text-align: right;
@@ -613,8 +673,7 @@ footer {
         bottom: -24px;
         right: 16px;
         font-size: 48px !important;
-        line-height: 48px !important;
-        animation: opaMove 1s linear; }
+        line-height: 48px !important; }
         .fuckit .container .item h3 .view--mobile {
           display: none; }
     .fuckit .container .item:nth-child(2) .item__box {
@@ -638,6 +697,15 @@ footer {
     justify-content: center;
     align-items: center;
     color: white; }
+  .fuckit__video img {
+    height: 100vh;
+    width: 100vw; }
+  .fuckit .container .item.show {
+    animation: opaMove 2s linear; }
+    .fuckit .container .item.show .item__box p {
+      animation: opaMove 3s linear; }
+    .fuckit .container .item.show h3 {
+      animation: opaMove 1s linear; }
 
 .story {
   background-color: #0a0a0a;
@@ -1093,8 +1161,7 @@ i:hover {
         flex: 1;
         display: flex;
         flex-direction: row;
-        padding: 20px 0;
-        animation: opaMove 1s linear; }
+        padding: 20px 0; }
         .music__releases .music__year .song__cover {
           min-width: 200px;
           min-height: 200px;
@@ -1155,6 +1222,8 @@ i:hover {
         .music__releases .music__year .song__author {
           max-width: 240px;
           color: #a5a5a5; }
+      .music__releases .music__year .release .show {
+        animation: opaMove 1s linear; }
 
 @media screen and (max-width: 950px) {
   .music__latest {
@@ -1256,7 +1325,13 @@ i:hover {
       margin-top: 40px;
       padding: 16px 32px;
       font-size: 14px;
-      font-weight: 600; } }
+      font-weight: 600; }
+  .music__releases .music__popular .popular__video {
+    height: 60vw !important;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 @media screen and (max-width: 750px) {
   .music__latest .latest__song {
@@ -1452,7 +1527,8 @@ i:hover {
     flex-wrap: wrap;
     padding: 200px 40px 120px; }
   .contact .contact__left {
-    flex: 1; }
+    flex: 1;
+    animation: opaMove 0.8s linear; }
     .contact .contact__left .header__title {
       margin-top: 56px; }
       .contact .contact__left .header__title__text {
@@ -1490,7 +1566,8 @@ i:hover {
           padding: 18px 0;
           width: 100%;
           background-color: black;
-          color: white; }
+          color: white;
+          cursor: pointer; }
       .contact .contact__right .contact__form .input--half {
         width: 48%; }
       .contact .contact__right .contact__form .input--full {
