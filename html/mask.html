@@ -28,8 +28,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/xtv0hhc.css">
 
-    <script defer src="../scripts/main.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls":"./jsm/controls/OrbitControls.js",
+                "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+            }
+        }
+    </script>
     <script defer type="module" src="../scripts/threejs.js"></script>
+    <script defer src="../scripts/main.js"></script>
 </head>
 <body>
     <div id="preloader" class="preloader">
