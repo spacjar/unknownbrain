@@ -68,7 +68,6 @@
     justify-content: center;
     flex-wrap: wrap;
     .item {
-      animation: opaMove 2s linear;
       position: relative;
       color: white;
       &:not(:last-child) {
@@ -82,7 +81,6 @@
         p {
           max-width: 500px;
           margin-right: 56px;
-          animation: opaMove 3s linear;
         }
       }
       h3 {
@@ -95,7 +93,6 @@
         right: 16px;
         font-size: 48px !important;
         line-height: 48px !important;
-        animation: opaMove 1s linear;
         .view--mobile {
           display: none;
         }
@@ -131,6 +128,23 @@
     justify-content: center;
     align-items: center;
     color: white;
+  }
+  &__video img {
+    height: 100vh;
+    width: 100vw;
+  }
+  .container {
+    .item.show {
+      animation: opaMove 2s linear;
+      .item__box {
+        p {
+          animation: opaMove 3s linear;
+        }
+      }
+      h3 {
+        animation: opaMove 1s linear;
+      }
+    }
   }
 }
 
