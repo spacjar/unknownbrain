@@ -155,23 +155,23 @@ canvas {
 
 @keyframes opaMove {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
     opacity: 0%;
   }
-  25% {
-    transform: translateY(4px);
-    opacity: 25%;
-  }
-  50% {
-    transform: translateY(3px);
-    opacity: 50%;
-  }
-  75% {
-    transform: translateY(2px);
-    opacity: 75%;
-  }
+  // 25% {
+  //   transform: translateY(8px);
+  //   opacity: 25%;
+  // }
+  // 50% {
+  //   transform: translateY(6px);
+  //   opacity: 50%;
+  // }
+  // 75% {
+  //   transform: translateY(4px);
+  //   opacity: 75%;
+  // }
   100% {
-    transform: translateY(1px);
+    transform: translateY(0px);
     opacity: 100%;
   }
 }
