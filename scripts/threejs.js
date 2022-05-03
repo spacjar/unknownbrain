@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls';
+import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader'
 
 const scene = new THREE.Scene();
 
