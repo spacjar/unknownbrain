@@ -336,19 +336,10 @@ canvas {
 
 @keyframes opaMove {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
     opacity: 0%; }
-  25% {
-    transform: translateY(4px);
-    opacity: 25%; }
-  50% {
-    transform: translateY(3px);
-    opacity: 50%; }
-  75% {
-    transform: translateY(2px);
-    opacity: 75%; }
   100% {
-    transform: translateY(1px);
+    transform: translateY(0px);
     opacity: 100%; } }
 
 @keyframes loader {
@@ -701,11 +692,11 @@ footer {
     height: 100vh;
     width: 100vw; }
   .fuckit .container .item.show {
-    animation: opaMove 2s linear; }
+    animation: opaMove 1s linear; }
     .fuckit .container .item.show .item__box p {
-      animation: opaMove 3s linear; }
+      animation: opaMove 1.2s linear; }
     .fuckit .container .item.show h3 {
-      animation: opaMove 1s linear; }
+      animation: opaMove 0.8s linear; }
 
 .story {
   background-color: #0a0a0a;
