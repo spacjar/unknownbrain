@@ -135,14 +135,14 @@
   }
   .container {
     .item.show {
-      animation: opaMove 2s linear;
+      animation: opaMove 1s linear;
       .item__box {
         p {
-          animation: opaMove 3s linear;
+          animation: opaMove 1.2s linear;
         }
       }
       h3 {
-        animation: opaMove 1s linear;
+        animation: opaMove 0.8s linear;
       }
     }
   }
