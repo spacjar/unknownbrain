@@ -18,7 +18,12 @@
   "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website#readme",
   "dependencies": {
     "node-sass": "^7.0.1",
+    "smooth-scrollbar": "^8.7.4",
     "swup": "^2.0.14",
     "three": "^0.139.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "webpack": "^5.72.0"
   }
 }
