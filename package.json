@@ -4,7 +4,8 @@
   "description": "Website for Unknown Brain.",
   "main": "package.json",
   "scripts": {
-    "sass": "node-sass scss/app.scss css/app.css -w"
+    "sass": "node-sass scss/app.scss css/app.css -w",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
     "node-sass": "^7.0.1",
     "smooth-scrollbar": "^8.7.4",
     "swup": "^2.0.14",
-    "three": "^0.139.2"
+    "three": "^0.139.2",
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
