@@ -5,7 +5,7 @@
   "main": "package.json",
   "scripts": {
     "sass": "node-sass src/scss/app.scss src/styles/app.css -w",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
