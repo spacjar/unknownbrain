@@ -1,0 +1,282 @@
+/* --- CSS Default settings --- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.list--unmarked {
+  li {
+    list-style: none;
+  }
+  a {
+    color: white; //fix this color
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 24px;
+  &--snarrow {
+    max-width: 1080px;
+  }
+  &--narrow {
+    max-width: 1104px;
+  }
+  &--wide {
+    max-width: 1264px;
+  }
+}
+
+.border {
+  &--black {
+    font-family: Sequel, sans-serif;
+    color: white;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+  }
+  &--white {
+    font-family: Sequel, sans-serif;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+/*.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  .circle {
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: loader 4s linear infinite;
+  }
+}*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+@keyframes opaMove {
+  0% {
+    transform: translateY(10px);
+    opacity: 0%;
+  }
+  // 25% {
+  //   transform: translateY(8px);
+  //   opacity: 25%;
+  // }
+  // 50% {
+  //   transform: translateY(6px);
+  //   opacity: 50%;
+  // }
+  // 75% {
+  //   transform: translateY(4px);
+  //   opacity: 75%;
+  // }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+
+@keyframes loader {
+  0% {
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+  }
+  25% {
+    border-width: 3px;
+    width: 70px;
+    height: 70px;
+  }
+  50% {
+    border-width: 4px;
+    width: 100px;
+    height: 100px;
+  }
+  75% {
+    border-width: 3px;
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// #preloader {
+//   position: fixed;
+//   width: 100vw;
+//   height: 100vh;
+//   animation: pageTransitionIn 2s linear;
+//   z-index: 9999;
+// }
+
+/*.transition--fade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  //animation: transitionOut 2s linear;
+  opacity: 0;
+  transition: 5s;
+}
+
+html.is-rendering .transition--fade {
+  opacity: 1;
+  display: block;
+}*/
+
+@keyframes pageTransitionOut {
+  0% {
+    opacity: 0;
+    background-color: black;
+    display: block;
+  }
+  25% {
+    opacity: 0.25;
+    background-color: black;
+    display: block;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: black;
+    display: block;
+  }
+  75% {
+    opacity: 0.75;
+    background-color: black;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    background-color: black;
+    display: block;
+  }
+}
+
+@keyframes pageTransitionIn {
+  0% {
+    opacity: 1;
+    background-color: black;
+  }
+  25% {
+    opacity: 0.75;
+    background-color: black;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: black;
+  }
+  75% {
+    opacity: 0.25;
+    background-color: black;
+  }
+  100% {
+    opacity: 0;
+    background-color: black;
+    display: none;
+  }
+}

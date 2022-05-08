@@ -20,21 +20,13 @@
     <meta property="og:url" content="https://unknownbrain.com/music" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Unknown Brain - Music library" />
-    <meta
-      property="og:description"
-      content="Browse through our music library. Checkout the new releases or all of our other songs."
-    />
+    <meta property="og:description" content="Browse through our music library. Checkout the new releases or all of our other songs."/>
     <!--<meta property="og:image" content=""/>-->
-    <meta
-      property="og:image:alt"
-      content="The official Unknown Brain Website - Music"
-    />
+    <meta property="og:image:alt" content="The official Unknown Brain Website - Music"/>
     <meta property="og:site_name" content="Unknown Brain - Music library" />
     <meta name="next-head-count" content="27" />
 
-    <link rel="shortcut icon" href="../assets/images/favicons/favicon-32.png" />
-
-    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="shortcut icon" href="../public/favicon-32.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -42,7 +34,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://use.typekit.net/xtv0hhc.css" />
-    <script defer src="../scripts/main.js"></script>
+    <script defer src="../dist/bundle.js"></script>
   </head>
   <body>
     <div id="preloader" class="preloader">
@@ -50,7 +42,7 @@
     </div>
     <header id="header">
       <div class="menu">
-        <a href="index.html">
+        <a href="../index.html">
           <svg
             class="icon-light"
             width="40"
@@ -91,7 +83,7 @@
         <nav class="sidenav" id="sidenav">
           <ul>
             <li>
-              <a href="index.html">HOME</a>
+              <a href="../index.html">HOME</a>
             </li>
             <li>
               <a href="music.html">MUSIC</a>
@@ -155,16 +147,16 @@
               <div class="latest__label">
                 <div class="latest__info">
                   <p class="latest__label pm pm--bold">Warner Music Group</p>
-                  <p class="latest__date pm pm--bold">11/11/2021</p>
+                  <p class="latest__date pm pm--bold">14/01/2022</p>
                 </div>
                 <h4 class="latest__name">Let's drink bleach</h4>
                 <p class="latest__author pm pm--bold">
                   Unknown Brain feat. Kyle Reynolds
                 </p>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" class="latest__btn ps">Listen now</a>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="latest__btn ps">Listen now</a>
               </div>
             </div>
-            <div class="latest__cover" style="background-image: url(../assets/images/cover/lets-drink-bleach.png);"></div>
+            <div class="latest__cover" style="background-image: url(../src/assets/images/cover/lets-drink-bleach.png);"></div>
           </div>
         </div>
       </div>
@@ -174,24 +166,45 @@
           <div class="music__year">
             <h3 class="music__header">Most Popular</h3>
             <div class="music__popular">
-              <div class="popular__video" style="background-image: url(../assets/images/cover/lets-drink-bleach-vid.jpeg);"></div>
+              <iframe class="popular__video" src="https://www.youtube.com/embed/RkdJ0dF8u-A" title="Most popular song of the year 2022" frameborder="0" allowfullscreen></iframe>
               <div class="popular__layout">
                 <div class="popular__info">
                   <div class="song__info">
                     <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
+                    <p class="song__date ps">14/01/2022</p>
                   </div>
                   <h4 class="popular__header">Let's Drink Bleach</h4>
                   <p class="popular__artists ps">Unknown Brain feat. Kyle Reynolds</p>
                 </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" class="popular__btn ps">Listen now</a>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="popular__btn ps">Listen now</a>
               </div>
             </div>
-            <div class="song">
+            <div class="song release">
               <div
                 class="song__cover"
                 style="
-                  background-image: url(../assets/images/cover/lets-drink-bleach.png);
+                  background-image: url(../src/assets/images/cover/lets-drink-bleach.png);
+                "
+              ></div>
+              <div class="song__information">
+                <div class="song__labels">
+                  <div class="song__info">
+                    <p class="song__label ps">Unknown</p>
+                    <p class="song__date ps">30/04/2022</p>
+                  </div>
+                  <h4 class="song__name">Fuck It</h4>
+                  <p class="song__author ps">
+                    Unknown Brain
+                  </p>
+                </div>
+                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+              </div>
+            </div>
+            <div class="song release">
+              <div
+                class="song__cover"
+                style="
+                  background-image: url(../src/assets/images/cover/lets-drink-bleach.png);
                 "
               ></div>
               <div class="song__information">
@@ -208,85 +221,30 @@
                 <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
               </div>
             </div>
-            <div class="song">
-              <div class="song__cover" style="
-                              background-image: url(../assets/images/cover/rooftop.jpg);
-                            "></div>
-              <div class="song__information">
-                <div class="song__labels">
-                  <div class="song__info">
-                    <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
-                  </div>
-                  <h4 class="song__name">Rooftop</h4>
-                  <p class="song__author ps">
-                    Unknown Brain feat. Kyle Reynolds
-                  </p>
-                </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
-              </div>
-            </div>
-            <div class="song">
-              <div class="song__cover" style="
-                              background-image: url(../assets/images/cover/lets-drink-bleach.png);
-                            "></div>
-              <div class="song__information">
-                <div class="song__labels">
-                  <div class="song__info">
-                    <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
-                  </div>
-                  <h4 class="song__name">Let's drink bleach</h4>
-                  <p class="song__author ps">
-                    Unknown Brain feat. Kyle Reynolds
-                  </p>
-                </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
-              </div>
-            </div>
+
           </div>
           <div class="music__year">
             <h3 class="music__header">Most Popular</h3>
             <div class="music__popular">
-              <div class="popular__video" style="background-image: url(../assets/images/cover/lets-drink-bleach-vid.jpeg);"></div>
+              <iframe class="popular__video" src="https://www.youtube.com/embed/5dG-eXcB0OY" title="Most popular song of the year 2021" frameborder="0" allowfullscreen></iframe>
               <div class="popular__layout">
                 <div class="popular__info">
                   <div class="song__info">
                     <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
+                    <p class="song__date ps">27/08/2021</p>
                   </div>
                   <h4 class="popular__header">Rooftop</h4>
                   <p class="popular__artists ps">Unknown Brain feat. Kyle Reynolds</p>
                 </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" class="popular__btn ps">Listen now</a>
+                <a href="https://lnk.to/UnknownBrain_RooftopAY" target="_blank" class="popular__btn ps">Listen now</a>
               </div>
             </div>
-            <div class="song">
-              <div class="song__cover" style="
-                            background-image: url(../assets/images/cover/lets-drink-bleach.png);
-                          "></div>
+            <div class="song release">
+              <div class="song__cover" style="background-image: url(../src/assets/images/cover/rooftop.jpg);"></div>
               <div class="song__information">
                 <div class="song__labels">
                   <div class="song__info">
-                    <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
-                  </div>
-                  <h4 class="song__name">Let's drink bleach</h4>
-                  <p class="song__author ps">
-                    Unknown Brain feat. Kyle Reynolds
-                  </p>
-                </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
-              </div>
-            </div>
-            <div class="song">
-              <div class="song__cover" style="
-                                        background-image: url(../assets/images/cover/rooftop.jpg);
-                                      "></div>
-              <div class="song__information">
-                <div class="song__labels">
-                  <div class="song__info">
-                    <p class="song__label ps">Warner Music Group</p>
+                    <p class="song__label ps">NCS</p>
                     <p class="song__date ps">11/11/2021</p>
                   </div>
                   <h4 class="song__name">Rooftop</h4>
@@ -294,25 +252,7 @@
                     Unknown Brain feat. Kyle Reynolds
                   </p>
                 </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
-              </div>
-            </div>
-            <div class="song">
-              <div class="song__cover" style="
-                                        background-image: url(../assets/images/cover/lets-drink-bleach.png);
-                                      "></div>
-              <div class="song__information">
-                <div class="song__labels">
-                  <div class="song__info">
-                    <p class="song__label ps">Warner Music Group</p>
-                    <p class="song__date ps">11/11/2021</p>
-                  </div>
-                  <h4 class="song__name">Let's drink bleach</h4>
-                  <p class="song__author ps">
-                    Unknown Brain feat. Kyle Reynolds
-                  </p>
-                </div>
-                <a href="https://wmg.click/UnknownBrain_LetsDrinkBleach" target="_blank" class="song__btn ps">Listen now</a>
+                <a href="https://lnk.to/UnknownBrain_RooftopAY" target="_blank" class="song__btn ps">Listen now</a>
               </div>
             </div>
           </div>

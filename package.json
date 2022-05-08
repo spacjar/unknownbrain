@@ -4,19 +4,30 @@
   "description": "Website for Unknown Brain.",
   "main": "package.json",
   "scripts": {
-    "sass": "node-sass scss/app.scss css/app.css -w"
+    "sass": "node-sass src/scss/app.scss src/styles/app.css -w",
+    "build": "webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/COOLPLAY1/Unknown-Brain-Website.git"
   },
-  "author": "Silenthium",
+  "author": "Jaroslav Špác",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/COOLPLAY1/Unknown-Brain-Website/issues"
   },
   "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website#readme",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1",
+    "smooth-scrollbar": "^8.7.4",
+    "swup": "^2.0.14",
+    "three": "^0.139.2",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0"
   }
 }
