@@ -57,8 +57,6 @@ const whiteMat = new THREE.MeshStandardMaterial(
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(ambientLight);
 
-const space = new THREE.TextureLoader().load('space.jpg');
-
 scene.background = 0x000000;
 
 const maskTexture = new THREE.TextureLoader().load('ubmask_lower.mtl');
@@ -96,7 +94,7 @@ const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true
 
 const objLoader = new OBJLoader();
 objLoader.load(
-    '../assets/models/ubmask_lower.obj',
+    '../src/assets/models/ubmask_lower.obj',
     (object) => {
         object.children[0].material = material;
         object.children[1].material = whiteMat;
