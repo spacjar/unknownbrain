@@ -1,5 +1,5 @@
 // JS
-require('./main.js');
+require('../src/scripts/main.js');
 //require('../src/scripts/threejs.js')
 
 // SCSS
