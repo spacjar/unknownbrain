@@ -76,12 +76,12 @@ const torus = new THREE.Mesh( geometry, material );
 // };
 
 // new MTLLoader()
-// .load( 'ubmask_lower.mtl', function ( materials ) {
+// .load( '../src/assets/ubmask_lower.mtl', function ( materials ) {
 //     materials.preload();
 
 //     new OBJLoader()
 //         .setMaterials( materials )
-//         .load( 'ubmask_lower.obj', function ( object ) {
+//         .load( '..src/assets/ubmask_lower.obj', function ( object ) {
 
 //             object.position.y = - 95;
 //             scene.add( object );
@@ -90,7 +90,7 @@ const torus = new THREE.Mesh( geometry, material );
 
 // } );
 
-const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
+// const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
 
 const objLoader = new OBJLoader();
 objLoader.load(
