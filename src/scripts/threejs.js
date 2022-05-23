@@ -10,6 +10,7 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 );
+
 const renderer = new THREE.WebGLRenderer({
     canvas: document.getElementById('canv'),
 });
@@ -56,8 +57,6 @@ const whiteMat = new THREE.MeshStandardMaterial(
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(ambientLight);
 
-const space = new THREE.TextureLoader().load('space.jpg');
-
 scene.background = 0x000000;
 
 const maskTexture = new THREE.TextureLoader().load('ubmask_lower.mtl');
@@ -77,12 +76,12 @@ const torus = new THREE.Mesh( geometry, material );
 // };
 
 // new MTLLoader()
-// .load( 'ubmask_lower.mtl', function ( materials ) {
+// .load( '../src/assets/ubmask_lower.mtl', function ( materials ) {
 //     materials.preload();
 
 //     new OBJLoader()
 //         .setMaterials( materials )
-//         .load( 'ubmask_lower.obj', function ( object ) {
+//         .load( '..src/assets/ubmask_lower.obj', function ( object ) {
 
 //             object.position.y = - 95;
 //             scene.add( object );
@@ -91,11 +90,11 @@ const torus = new THREE.Mesh( geometry, material );
 
 // } );
 
-const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
+// const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true })
 
 const objLoader = new OBJLoader();
 objLoader.load(
-    '../assets/models/ubmask_lower.obj',
+    '../src/assets/models/ubmask_lower.obj',
     (object) => {
         object.children[0].material = material;
         object.children[1].material = whiteMat;
