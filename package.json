@@ -5,7 +5,9 @@
   "main": "package.json",
   "scripts": {
     "sass": "node-sass src/scss/app.scss src/styles/app.css -w",
-    "build": "webpack --mode production --watch"
+    "build": "webpack --mode production --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/COOLPLAY1/Unknown-Brain-Website/issues"
   },
-  "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website#readme",
+  "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website",
   "dependencies": {
     "node-sass": "^7.0.1",
     "smooth-scrollbar": "^8.7.4",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.0"
