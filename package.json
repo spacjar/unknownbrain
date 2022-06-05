@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website",
   "dependencies": {
+    "gltf-loader-2": "^0.0.3",
     "sass": "^1.52.2",
     "smooth-scrollbar": "^8.7.4",
     "swup": "^2.0.14",
@@ -31,6 +32,6 @@
     "gh-pages": "^4.0.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.72.0"
+    "webpack": "^5.73.0"
   }
 }
