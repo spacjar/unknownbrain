@@ -20,7 +20,7 @@ function mount() {
 	
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(window.innerWidth, window.innerHeight);
-	camera.position.x = 24;
+	camera.position.x = 16;
 	camera.position.y = 8;
 	camera.position.z = 32;
 	scene.background = new THREE.Color(0x202020);
@@ -62,7 +62,7 @@ function mount() {
 	// Load a glTF resource
 	let mask = loader.load(
 		// resource URL
-		'../../src/assets/models/ubmask.gltf',
+		'../../src/assets/ubmask.gltf',
 		// called when the resource is loaded
 		function ( gltf ) {
 			scene.add( gltf.scene );
