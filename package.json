@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/COOLPLAY1/Unknown-Brain-Website",
   "dependencies": {
-    "node-sass": "^7.0.1",
+    "sass": "^1.52.2",
     "smooth-scrollbar": "^8.7.4",
     "swup": "^2.0.14",
     "three": "^0.139.2",
