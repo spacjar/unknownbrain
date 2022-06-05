@@ -21,6 +21,12 @@ module.exports = {
             'css-loader',
             'sass-loader',
         ],
+      },
+      // GLTF configuration: add this to rules
+      {
+        // match all .gltf files
+        test: /\.(gltf)$/,
+        loader: 'gltf-loader-2'
       }
     ]
     }
