@@ -62,7 +62,7 @@ function mount() {
 	// Load a glTF resource
 	let mask = loader.load(
 		// resource URL
-		'../../src/assets/ubmask.gltf',
+		'../../src/assets/models/ubmask.gltf',
 		// called when the resource is loaded
 		function ( gltf ) {
 			scene.add( gltf.scene );
