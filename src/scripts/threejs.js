@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 
+
 if(!!document.getElementById('canv')) {
 	mount();
 	console.log("Cc");
@@ -23,7 +24,12 @@ function mount() {
 	camera.position.x = 16;
 	camera.position.y = 8;
 	camera.position.z = 32;
-	scene.background = new THREE.Color(0x202020);
+
+	// let sceneBackground = new THREE.MeshBasicMaterial( {
+	// 	map: new THREE.TextureLoader().load( '../../src/assets/images/mask-bg.png' )
+	//   } );
+	scene.background = new THREE.Color(0x101010);
+	// screen.background = sceneBackground;
 	
 	renderer.render(scene, camera);
 	document.body.appendChild(renderer.domElement);
