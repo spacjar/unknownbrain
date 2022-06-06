@@ -22,12 +22,25 @@ module.exports = {
             'sass-loader',
         ],
       },
-      // GLTF configuration: add this to rules
+      // // GLTF configuration: add this to rules
+      // {
+      //   // match all .gltf files
+      //   test: /\.(gltf)$/,
+      //   loader: 'gltf-loader-2'
+      // },
       {
-        // match all .gltf files
-        test: /\.(gltf)$/,
-        loader: 'gltf-loader-2'
-      }
+        test: /\.(glb|gltf)$/,
+        use:
+        [
+            {
+                loader: 'file-loader',
+                options:
+                {
+                    outputPath: 'assets/models/'
+                }
+            }
+        ]
+    },
     ]
     }
   }
