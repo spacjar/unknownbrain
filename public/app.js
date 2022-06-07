@@ -5,6 +5,7 @@ require('../src/scss/app.scss');
 require('../src/scripts/main.js');
 //require('../src/scripts/scrollbar.js');
 require('../src/scripts/threejs.js');
+require('../src/assets/models/ubmask.gltf');
 
 
 
