@@ -23,6 +23,18 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            sourceMap: true
+          }
+          }
+        ]
+      },
+      {
         test: /\.(ttf|eot|woff|woff2)$/,
         use: {
          loader: 'file-loader',
