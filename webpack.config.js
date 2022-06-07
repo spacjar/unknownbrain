@@ -22,6 +22,16 @@ module.exports = {
             'sass-loader',
         ],
       },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+         loader: 'file-loader',
+         options: {
+          name: 'fonts/[name].[ext]'
+          // sourceMap: true
+         }
+        }
+       },
       // // GLTF configuration: add this to rules
       // {
       //   // match all .gltf files
