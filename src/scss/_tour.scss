@@ -1,60 +1,48 @@
-/* --- Tour Header ---*/
-.intro {
-    height: 50vh;
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url();
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $light;
-    h1 {
-        font-weight: 900;
-        font-size: 30px;
-        text-align: center;
+.shows {
+    background-color: #0A0A0A;
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        padding-top: 160px;
+        width: 100%;
+        &__heading {
+            position: absolute;
+            text-transform: uppercase;
+            max-width: 800px;
+            left: 0;
+            color: #fff;
+        }
+        &__image {
+            width: 640px;
+            height: 427.6px;
+        }
     }
 }
 
-/*--- SongKick ---*/
-.tour-info {
-    min-height: 100vh;
-    background-color: $light;
-}
 
-.songkick {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    min-height: 50vh;
-    color: $dark;
-}
 
-.songkick > * {
-    min-width: 100%;
-}
 
-/*--- Title text ---*/
-/*.left-text {
-    position: relative;
-}
 
-.left-text p {
-    position: absolute;
-}
-
-.left-text p::before {
-    content: "";
-    border-bottom: 500px solid black;
-    width: 4rem;
-    margin: 0 1rem;
-    transform: translateY(-1rem);
-}*/
-
-@media all and (max-width: 800px) {
-    .songkick div {
-        width: 92vw;
-        max-width: 92vw;
+@media all and (max-width: 1000px) {
+    .shows {
+        &__header {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 64px;
+            &__heading {
+                position: static;
+                max-width: 100%;
+                margin: 16px 0 8px;
+                font-size: 32px !important;
+                line-height: 32px !important;
+            }
+            &__image {
+                width: 100% !important;
+                height: 64vw;
+            }
+        }
     }
 }
